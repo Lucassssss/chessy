@@ -53,6 +53,8 @@ point[7] = {
     color: ""
 };
 
+// console.log(point)
+
 module.exports = {
     getPoint: function(index) {
         return point[index];

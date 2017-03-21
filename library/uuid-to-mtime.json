@@ -299,24 +299,24 @@
     "meta": 1490086728000,
     "relativePath": "Texture/black_piece.prefab"
   },
-  "cdd5991c-64fc-4c37-8181-2cffd82e7cb4": {
-    "asset": 1490090670000,
-    "meta": 1490090846000,
-    "relativePath": "Script/chess.js"
-  },
-  "4b290a25-8cb9-4856-b2c7-73c7a313f819": {
-    "asset": 1490090626000,
-    "meta": 1490090846000,
-    "relativePath": "Script/main.js"
-  },
   "683d19bd-1085-4666-af74-78ed310739b0": {
     "asset": 1490089744000,
     "meta": 1490089774000,
     "relativePath": "Script/chessMgr.js"
   },
   "01d78545-868c-4e6f-8da5-7a46a2809b0d": {
-    "asset": 1490090386000,
-    "meta": 1490090846000,
+    "asset": 1490093567000,
+    "meta": 1490093625000,
     "relativePath": "Script/pointMgr.js"
+  },
+  "cdd5991c-64fc-4c37-8181-2cffd82e7cb4": {
+    "asset": 1490093666000,
+    "meta": 1490093667000,
+    "relativePath": "Script/chess.js"
+  },
+  "4b290a25-8cb9-4856-b2c7-73c7a313f819": {
+    "asset": 1490094220000,
+    "meta": 1490094222000,
+    "relativePath": "Script/main.js"
   }
 }

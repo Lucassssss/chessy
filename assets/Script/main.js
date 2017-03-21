@@ -15,19 +15,29 @@ cc.Class({
     // use this for initialization
     onLoad: function () {
         this.initChessToPoint();
-        this.addNewChess();
+        // this.addNewChess();
     },
 
     start: function() {
         let chessMgr = require('chessMgr');
         // Set
-        chessMgr.move(200, 100);
+        // chessMgr.move(200, 100);
     },
     // 初始化放置棋子到默认位置
     initChessToPoint: function() {
-        let pointMgr = require('pointMgr'),
-            pointArray = pointMgr.getPoint();
-        console.log(pointArray);
+        let that = this,
+            pointMgr = require('pointMgr'),
+            chessMgr = require('chessMgr');
+        for(let i=0;i<8; i++) {
+            let point = pointMgr.getPoint(i), 
+                newChess = cc.instantiate(this.chessPrefab);
+            var x = point.x, 
+                y = point.y;
+            // chessMgr.move(x, y);
+            that.node.addChild(newChess);
+            newChess.setPosition(x, y);
+            console.log(x, y)
+        }
     },
 
     addNewChess: function() {

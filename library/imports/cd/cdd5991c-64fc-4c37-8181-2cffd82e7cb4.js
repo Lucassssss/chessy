@@ -2,11 +2,7 @@ cc.Class({
     "extends": cc.Component,
 
     properties: {
-        chessBlack: {
-            "default": null,
-            type: cc.Node
-        },
-        chessWhite: {
+        chess: {
             "default": null,
             type: cc.Node
         }

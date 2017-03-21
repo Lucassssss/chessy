@@ -7,7 +7,7 @@ point[0] = {
     x: 68,
     y: 742,
     isEmpty: false,
-    color: white
+    color: "white"
 };
 point[1] = {
     x: 317,
@@ -56,6 +56,8 @@ point[7] = {
     isEmpty: true,
     color: ""
 };
+
+// console.log(point)
 
 module.exports = {
     getPoint: function getPoint(index) {
