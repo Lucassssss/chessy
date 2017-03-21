@@ -1,0 +1,57 @@
+2017-03-21T10:07:22.369Z - normal: Load ~/.CocosCreator/settings.json
+2017-03-21T10:07:22.383Z - normal: checking language setting...
+2017-03-21T10:07:22.384Z - normal: Language: zh
+2017-03-21T10:07:23.600Z - success: protocol editor-framework registered
+2017-03-21T10:07:23.602Z - success: protocol app registered
+2017-03-21T10:07:23.603Z - success: protocol theme registered
+2017-03-21T10:07:23.604Z - success: protocol profile registered
+2017-03-21T10:07:23.605Z - success: protocol packages registered
+2017-03-21T10:07:23.614Z - success: protocol unpack registerred
+2017-03-21T10:07:23.615Z - success: protocol disable-commonjs registerred
+2017-03-21T10:07:23.852Z - normal: connected!
+2017-03-21T10:07:23.858Z - normal: Check project /Users/apple/workspace/cocos/chessy
+2017-03-21T10:07:23.864Z - normal: Initializing Cocos2d
+2017-03-21T10:07:24.415Z - normal: Initializing Asset Database
+2017-03-21T10:07:24.465Z - success: protocol uuid registerred
+2017-03-21T10:07:24.466Z - success: protocol db registerred
+2017-03-21T10:07:24.466Z - success: protocol thumbnail registerred
+2017-03-21T10:07:24.467Z - normal: Loading editor/builtin packages
+2017-03-21T10:07:24.740Z - success: assets loaded
+2017-03-21T10:07:24.747Z - success: builder loaded
+2017-03-21T10:07:24.757Z - success: hierarchy loaded
+2017-03-21T10:07:24.775Z - success: inspector loaded
+2017-03-21T10:07:24.780Z - success: keystore loaded
+2017-03-21T10:07:24.791Z - success: node-library loaded
+2017-03-21T10:07:24.798Z - success: preferences loaded
+2017-03-21T10:07:24.829Z - success: project-importer loaded
+2017-03-21T10:07:24.835Z - success: project-settings loaded
+2017-03-21T10:07:24.842Z - success: ui-kit loaded
+2017-03-21T10:07:24.851Z - success: ui-grid loaded
+2017-03-21T10:07:24.859Z - success: scene loaded
+2017-03-21T10:07:24.863Z - success: sprite-editor loaded
+2017-03-21T10:07:24.964Z - success: store loaded
+2017-03-21T10:07:24.974Z - success: timeline loaded
+2017-03-21T10:07:24.975Z - normal: Loading builtin packages
+2017-03-21T10:07:24.983Z - success: anysdk loaded
+2017-03-21T10:07:24.989Z - success: asset-db-debugger loaded
+2017-03-21T10:07:24.991Z - success: code-editor loaded
+2017-03-21T10:07:24.992Z - success: color-picker loaded
+2017-03-21T10:07:25.001Z - success: console loaded
+2017-03-21T10:07:25.009Z - success: package-manager loaded
+2017-03-21T10:07:25.018Z - success: tester loaded
+2017-03-21T10:07:25.025Z - success: ui-kit-preview-extra loaded
+2017-03-21T10:07:25.032Z - success: ui-kit-preview loaded
+2017-03-21T10:07:25.041Z - success: ui-tree loaded
+2017-03-21T10:07:25.139Z - normal: Initializing project /Users/apple/workspace/cocos/chessy
+2017-03-21T10:07:25.143Z - normal: Loading packages
+2017-03-21T10:07:25.153Z - normal: Watching packages
+2017-03-21T10:07:25.196Z - normal: Run Application
+2017-03-21T10:07:27.985Z - success: preview server running at http://localhost:7456
+2017-03-21T10:07:27.986Z - normal: Compiling scripts...
+2017-03-21T10:07:37.163Z - normal: Compiled project javascript file successfully
+2017-03-21T10:07:51.473Z - normal: 1.4.0
+2017-03-21T10:07:54.659Z - error: ReferenceError: white is not defined
+    at Object.require.pointMgr: "color: white" (assets/Script/pointMgr.js:6:4)
+    at s (../../../../../../../Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/browser-pack/_prelude.js:1)
+    at e (../../../../../../../Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/browser-pack/_prelude.js:1)
+    at file:///Users/apple/workspace/cocos/chessy/library/bundle.project.js?001:1:451

@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE;AACR,uBAAe,EAAE;AACb,uBAAS,IAAI;AACb,eAAG,EAAE,EAAE,CAAC,SAAS;SACpB;AACD,mBAAW,EAAE;AACT,uBAAS,IAAI;AACb,gBAAI,EAAE,EAAE,CAAC,MAAM;SAClB;KACJ;;;AAGD,UAAM,EAAE,kBAAY;AAChB,YAAI,CAAC,gBAAgB,EAAE,CAAC;AACxB,YAAI,CAAC,WAAW,EAAE,CAAC;KACtB;;AAED,SAAK,EAAE,iBAAW;AACd,YAAI,QAAQ,GAAG,OAAO,CAAC,UAAU,CAAC,CAAC;;AAEnC,gBAAQ,CAAC,IAAI,CAAC,GAAG,EAAE,GAAG,CAAC,CAAC;KAC3B;;AAED,oBAAgB,EAAE,4BAAW;AACzB,YAAI,QAAQ,GAAG,OAAO,CAAC,UAAU,CAAC;YAC9B,UAAU,GAAG,QAAQ,CAAC,QAAQ,EAAE,CAAC;AACrC,eAAO,CAAC,GAAG,CAAC,UAAU,CAAC,CAAC;KAC3B;;AAED,eAAW,EAAE,uBAAW;AACpB,YAAI,QAAQ,GAAG,OAAO,CAAC,UAAU,CAAC;YAC9B,CAAC,GAAG,QAAQ,CAAC,YAAY,EAAE;YAC3B,CAAC,GAAG,QAAQ,CAAC,YAAY,EAAE;YAC3B,QAAQ,GAAG,EAAE,CAAC,WAAW,CAAC,IAAI,CAAC,WAAW,CAAC,CAAC;AAChD,YAAI,CAAC,IAAI,CAAC,QAAQ,CAAC,QAAQ,CAAC,CAAC;AAC7B,eAAO,CAAC,GAAG,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;AAClB,gBAAQ,CAAC,WAAW,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;KAC9B;;AAED,UAAM,EAAE,kBAAW,EAElB;CACJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\n    extends: cc.Component,\n\n    properties: {\n        backgroundAudio: {\n            default: null,\n            url: cc.AudioClip\n        },\n        chessPrefab: {\n            default: null,\n            type: cc.Prefab\n        }\n    },\n\n    // use this for initialization\n    onLoad: function () {\n        this.initChessToPoint();\n        this.addNewChess();\n    },\n\n    start: function() {\n        let chessMgr = require('chessMgr');\n        // Set\n        chessMgr.move(200, 100);\n    },\n    // 初始化放置棋子到默认位置\n    initChessToPoint: function() {\n        let pointMgr = require('pointMgr'),\n            pointArray = pointMgr.getPoint();\n        console.log(pointArray);\n    },\n\n    addNewChess: function() {\n        let chessMgr = require('chessMgr'),\n            x = chessMgr.getPositionX(),\n            y = chessMgr.getPositionY(),\n            newChess = cc.instantiate(this.chessPrefab);\n        this.node.addChild(newChess);\n        console.log(x, y);\n        newChess.setPosition(x, y);\n    },\n\n    update: function() {\n\n    }\n});\n"
+  ]
+}

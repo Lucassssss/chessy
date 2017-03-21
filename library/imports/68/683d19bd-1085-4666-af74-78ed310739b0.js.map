@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAI,KAAK,GAAG;AACR,YAAQ,EAAG,CAAC;AACZ,YAAQ,EAAE,CAAC;AACX,UAAM,EAAE,KAAK;CAChB,CAAC;;AAEF,MAAM,CAAC,OAAO,GAAG;;AAEb,aAAS,EAAE,mBAAS,EAAE,EAAE;AACpB,aAAK,CAAC,MAAM,GAAG,EAAE,CAAC;KACrB;AACD,QAAI,EAAE,cAAS,CAAC,EAAE,CAAC,EAAE;AACjB,aAAK,CAAC,QAAQ,GAAG,CAAC,CAAC;AACnB,aAAK,CAAC,QAAQ,GAAG,CAAC,CAAC;KACtB;;AAED,aAAS,EAAE,qBAAW;AAClB,eAAO,KAAK,CAAC,MAAM,CAAC;KACvB;AACD,gBAAY,EAAE,wBAAW;AACrB,eAAO,KAAK,CAAC,QAAQ,CAAC;KACzB;AACD,gBAAY,EAAE,wBAAW;AACrB,eAAO,KAAK,CAAC,QAAQ,CAAC;KACzB;CACJ,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "let chess = {\n    postionX : 0,\n    postionY: 0,\n    isDead: false\n};\n\nmodule.exports = {\n    // Set functions\n    setStatus: function(is) {\n        chess.isDead = is;\n    },\n    move: function(x, y) {\n        chess.postionX = x;\n        chess.postionY = y;\n    },\n    // Get functions\n    getStatus: function() {\n        return chess.isDead;\n    },\n    getPositionX: function() {\n        return chess.postionX;\n    },\n    getPositionY: function() {\n        return chess.postionY;\n    }\n};"
+  ]
+}

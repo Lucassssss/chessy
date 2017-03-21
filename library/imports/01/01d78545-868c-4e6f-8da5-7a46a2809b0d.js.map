@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAI,KAAK,GAAG,EAAE,CAAC;AACf,KAAK,CAAC,CAAC,CAAC,GAAG;AACP,KAAC,EAAE,EAAE;AACL,KAAC,EAAE,GAAG;AACN,WAAO,EAAE,KAAK;AACd,SAAK,EAAE,KAAK;CACf,CAAC;AACF,KAAK,CAAC,CAAC,CAAC,GAAG;AACP,KAAC,EAAE,GAAG;AACN,KAAC,EAAE,GAAG;AACN,WAAO,EAAE,KAAK;AACd,SAAK,EAAE,OAAO;CACjB,CAAC;AACF,KAAK,CAAC,CAAC,CAAC,GAAG;AACP,KAAC,EAAE,GAAG;AACN,KAAC,EAAE,GAAG;AACN,WAAO,EAAE,KAAK;AACd,SAAK,EAAE,OAAO;CACjB,CAAC;;AAEF,KAAK,CAAC,CAAC,CAAC,GAAG;AACP,KAAC,EAAE,GAAG;AACN,KAAC,EAAE,GAAG;AACN,WAAO,EAAE,IAAI;AACb,SAAK,EAAE,EAAE;CACZ,CAAC;;AAEF,KAAK,CAAC,CAAC,CAAC,GAAG;AACP,KAAC,EAAE,GAAG;AACN,KAAC,EAAE,GAAG;AACN,WAAO,EAAE,KAAK;AACd,SAAK,EAAE,OAAO;CACjB,CAAC;;AAEF,KAAK,CAAC,CAAC,CAAC,GAAG;AACP,KAAC,EAAE,GAAG;AACN,KAAC,EAAE,GAAG;AACN,WAAO,EAAE,KAAK;AACd,SAAK,EAAE,OAAO;CACjB,CAAC;;AAEF,KAAK,CAAC,CAAC,CAAC,GAAG;AACP,KAAC,EAAE,EAAE;AACL,KAAC,EAAE,GAAG;AACN,WAAO,EAAE,KAAK;AACd,SAAK,EAAE,OAAO;CACjB,CAAC;;AAEF,KAAK,CAAC,CAAC,CAAC,GAAG;AACP,KAAC,EAAE,EAAE;AACL,KAAC,EAAE,GAAG;AACN,WAAO,EAAE,IAAI;AACb,SAAK,EAAE,EAAE;CACZ,CAAC;;AAEF,MAAM,CAAC,OAAO,GAAG;AACb,YAAQ,EAAE,kBAAS,KAAK,EAAE;AACtB,eAAO,KAAK,CAAC,KAAK,CAAC,CAAC;KACvB;AACD,aAAS,EAAE,mBAAS,KAAK,EAAE,IAAI,EAAE;AAC7B,aAAK,CAAC,KAAK,CAAC,CAAC,OAAO,GAAG,IAAI,CAAC;KAC/B;AACD,YAAQ,EAAE,kBAAS,KAAK,EAAE,QAAQ,EAAE;AAChC,aAAK,CAAC,KAAK,CAAC,CAAC,KAAK,GAAG,QAAQ,CAAC;KACjC;CACJ,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "let point = [];\npoint[0] = {\n    x: 68,\n    y: 742,\n    isEmpty: false,\n    color: white\n};\npoint[1] = {\n    x: 317,\n    y: 742,\n    isEmpty: false,\n    color: \"white\"\n};\npoint[2] = {\n    x: 563,\n    y: 742,\n    isEmpty: false,\n    color: \"white\"\n};\n\npoint[3] = {\n    x: 563,\n    y: 504,\n    isEmpty: true,\n    color: \"\"\n};\n\npoint[4] = {\n    x: 563,\n    y: 251,\n    isEmpty: false,\n    color: \"black\"\n};\n\npoint[5] = {\n    x: 325,\n    y: 251,\n    isEmpty: false,\n    color: \"black\"\n};\n\npoint[6] = {\n    x: 68,\n    y: 251,\n    isEmpty: false,\n    color: \"black\"\n};\n\npoint[7] = {\n    x: 68,\n    y: 504,\n    isEmpty: true,\n    color: \"\"\n};\n\nmodule.exports = {\n    getPoint: function(index) {\n        return point[index];\n    },\n    setStatus: function(index, bool) {\n        point[index].isEmpty = bool;\n    },\n    setColor: function(index, newColor) {\n        point[index].color = newColor;\n    }\n};\n\n"
+  ]
+}
