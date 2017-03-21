@@ -3,7 +3,7 @@ point[0] = {
     x: 68,
     y: 742,
     isEmpty: false,
-    color: white
+    color: "white"
 };
 point[1] = {
     x: 317,
