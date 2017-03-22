@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "",
+    "_name": "white_piece",
     "_objFlags": 0,
     "_rawFiles": null,
     "data": {
@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "black_piece",
+    "_name": "white_piece",
     "_objFlags": 0,
     "_opacity": 255,
     "_color": {
@@ -72,7 +72,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "f2265d80-becc-4dac-9925-32fb27eccf78"
+      "__uuid__": "7b7119d0-2299-47df-a0a5-478463a8a7ea"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -107,9 +107,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "bf8e1d4e-8949-4232-8fb7-6379af421b6a"
+      "__id__": 0
     },
-    "fileId": "eb1901QlN9Ad6hauZPCMXJ4",
+    "fileId": "18f21w/8ONHx4Z7XmoJXBn6",
     "sync": false
   }
 ]

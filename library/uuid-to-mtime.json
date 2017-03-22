@@ -165,8 +165,8 @@
     "relativePath": "Texture/background.png"
   },
   "f336141a-2774-40bc-ad8f-2e54cd97800e": {
-    "asset": 1490089602000,
-    "meta": 1490089602000,
+    "asset": 1490165420000,
+    "meta": 1490165420000,
     "relativePath": "Scene/首页.fire"
   },
   "cba08583-83d0-4b9e-a03a-0aa6c11a1973": {
@@ -294,29 +294,34 @@
     "meta": 1490078112000,
     "relativePath": "prefab/toggleGroup.prefab"
   },
-  "877300ab-d4f0-4f86-ad4a-b6a301302c66": {
-    "asset": 1490086728000,
-    "meta": 1490086728000,
-    "relativePath": "Texture/black_piece.prefab"
-  },
   "683d19bd-1085-4666-af74-78ed310739b0": {
     "asset": 1490089744000,
     "meta": 1490089774000,
     "relativePath": "Script/chessMgr.js"
-  },
-  "01d78545-868c-4e6f-8da5-7a46a2809b0d": {
-    "asset": 1490093567000,
-    "meta": 1490093625000,
-    "relativePath": "Script/pointMgr.js"
   },
   "cdd5991c-64fc-4c37-8181-2cffd82e7cb4": {
     "asset": 1490093666000,
     "meta": 1490093667000,
     "relativePath": "Script/chess.js"
   },
+  "bf8e1d4e-8949-4232-8fb7-6379af421b6a": {
+    "asset": 1490162511000,
+    "meta": 1490162511000,
+    "relativePath": "Texture/black_piece.prefab"
+  },
+  "01d78545-868c-4e6f-8da5-7a46a2809b0d": {
+    "asset": 1490162889000,
+    "meta": 1490162891000,
+    "relativePath": "Script/pointMgr.js"
+  },
+  "dc892dbb-2bbf-427a-9fa6-b1854b1bf825": {
+    "asset": 1490163077000,
+    "meta": 1490163077000,
+    "relativePath": "Texture/white_piece.prefab"
+  },
   "4b290a25-8cb9-4856-b2c7-73c7a313f819": {
-    "asset": 1490094220000,
-    "meta": 1490094222000,
+    "asset": 1490182793000,
+    "meta": 1490182796000,
     "relativePath": "Script/main.js"
   }
 }

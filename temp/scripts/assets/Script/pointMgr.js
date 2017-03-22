@@ -4,55 +4,55 @@ cc._RFpush(module, '01d78VFhoxOb42lekaigJsN', 'pointMgr');
 
 var point = [];
 point[0] = {
-    x: 68,
-    y: 742,
+    x: -246,
+    y: 266,
     isEmpty: false,
     color: "white"
 };
 point[1] = {
-    x: 317,
-    y: 742,
+    x: 4,
+    y: 266,
     isEmpty: false,
     color: "white"
 };
 point[2] = {
-    x: 563,
-    y: 742,
+    x: 246,
+    y: 266,
     isEmpty: false,
     color: "white"
 };
 
 point[3] = {
-    x: 563,
-    y: 504,
+    x: 250,
+    y: 20,
     isEmpty: true,
     color: ""
 };
 
 point[4] = {
-    x: 563,
-    y: 251,
+    x: 244,
+    y: -227,
     isEmpty: false,
     color: "black"
 };
 
 point[5] = {
-    x: 325,
-    y: 251,
+    x: 1,
+    y: -231,
     isEmpty: false,
     color: "black"
 };
 
 point[6] = {
-    x: 68,
-    y: 251,
+    x: -250,
+    y: -227,
     isEmpty: false,
     color: "black"
 };
 
 point[7] = {
-    x: 68,
-    y: 504,
+    x: -250,
+    y: 14,
     isEmpty: true,
     color: ""
 };
