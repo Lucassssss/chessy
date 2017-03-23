@@ -59,11 +59,53 @@ module.exports = {
     getPoint: function(index) {
         return point[index];
     },
+    getPosition: function(index) {
+        return(point[index].x + ',' + point[index].y);
+    },
+    getStatus: function(index) {
+        return point[index].isEmpty;
+    },
     setStatus: function(index, bool) {
         point[index].isEmpty = bool;
+        cc.log('设置', index, '为', bool);
+        cc.log(point[index]);
     },
     setColor: function(index, newColor) {
         point[index].color = newColor;
+    },
+    isInpoint: function(targetPoint, callback) {
+       // console.log(targetPoint);
+        let targetPointX = targetPoint.x, targetPointY = targetPoint.y, range = 120  ;
+        //for(var i = 0; i > point.length; i ++ ) {
+            //let x = point[i].x, y = point[i].y, 
+            // 范围坐标
+            if(targetPointX > range ) {
+                if(targetPointY<=range&&targetPointY>=-range){
+                    callback(3);
+                }else if (targetPointY>range){
+                    callback(2);
+                }else if (targetPointY<-range){
+                    callback(4);
+                }
+            }else if(targetPointX<-range){
+                if(targetPointY>range){
+                    callback(0);
+                }else if(targetPointY<=range&&targetPointY>=-range){
+                    callback(7);
+                }else if(targetPointY<-range){
+                    callback(6);
+                }
+            }else{
+                if(targetPointY>range){
+                    callback(1);
+                }else if(targetPointY<-range){
+                    callback(5);
+                }else{
+                    callback('');
+                }
+            }
+
+        //}
     }
 };
 

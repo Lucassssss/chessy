@@ -355,8 +355,8 @@
       "width": 640,
       "height": 960
     },
-    "_fitWidth": false,
-    "_fitHeight": true
+    "_fitWidth": true,
+    "_fitHeight": false
   },
   {
     "__type__": "4b290oljLlIVrLHc8ejE/gZ",
@@ -369,11 +369,18 @@
     "backgroundAudio": {
       "__uuid__": "cba08583-83d0-4b9e-a03a-0aa6c11a1973"
     },
+    "putAudio": {
+      "__uuid__": "587cf9cb-f41e-4afc-b9e7-821e5f73a410"
+    },
     "blackChessPrefab": {
       "__uuid__": "bf8e1d4e-8949-4232-8fb7-6379af421b6a"
     },
     "whiteChessPrefab": {
       "__uuid__": "dc892dbb-2bbf-427a-9fa6-b1854b1bf825"
-    }
+    },
+    "moveAble": false,
+    "movingChessName": "",
+    "oldPositionX": 0,
+    "oldPositionY": 0
   }
 ]

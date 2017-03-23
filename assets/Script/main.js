@@ -6,6 +6,14 @@ cc.Class({
             default: null,
             url: cc.AudioClip
         },
+        pickAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
+        putAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
         blackChessPrefab: {
             default: null,
             type: cc.Prefab
@@ -14,45 +22,68 @@ cc.Class({
             default: null,
             type: cc.Prefab
         },
-        movingChessName: ""
+        moveAble: false,
+        movingChessName: "",
+        oldPositionX: 0,
+        oldPositionY: 0
     },
 
     // use this for initialization
     onLoad: function () {
         this.initChessToPoint();
-        // this.addNewChess();
-        
+        this.node.on("touchstart", this.onPut, this);
     },
 
     onTouchStart: function(e) {
         cc.find('Canvas').emit('pick', this.name);
-        cc.find('Canvas').emit('put', this.name);
         this.runAction(cc.scaleTo(0.1, 1.2, 1.2));
-        this.movingChessName = this.name;
+        cc.find('Canvas').getComponent('main').moveAble = true;
+        cc.find('Canvas').getComponent('main').movingChessName = this.name;
+        cc.find('Canvas').getComponent('main').oldPositionX = this.x;
+        cc.find('Canvas').getComponent('main').oldPositionY = this.y;
     },
 
     onPick: function(e) {
         if(e.detail !== this.name) {
             this.runAction(cc.scaleTo(0.1,1, 1));
+            cc.find('Canvas').getComponent('main').moveAble = false;
+        } else {
+            cc.find('Canvas').emit('put', this.name);
         }
     },
 
     onPut: function(e) {
-        let x = 0, y = 0, that = this;
-        if(e.detail == this.name) {
-            cc.find('Canvas').on('touchstart', function(e) {
-                var locationV2 = this.convertToNodeSpaceAR(e.getLocation());
-                that.runAction(cc.moveTo(0.1,locationV2));
+        let that = this,
+            oldPoint = {x: that.oldPositionX ,y: that.oldPositionY},
+            moveAble = cc.find('Canvas').getComponent('main').moveAble,   // 是否可移动
+            movingChessName = cc.find('Canvas').getComponent('main').movingChessName,   // 可移动的棋子 name
+            moveChessNode = cc.find('Canvas').getChildByName(movingChessName),  // 可移动棋子的节点
+            targetPoint = this.node.convertToNodeSpaceAR(e.getLocation()),
+            pointMgr = require('pointMgr');
+
+            // cc.log(oldPoint);
+            pointMgr.isInpoint(targetPoint, function(index) {   // 传递目标坐标，如果在已定义的点范围内则返回该已定义点的索引
+                let pointX = pointMgr.getPoint(index).x, 
+                    pointY = pointMgr.getPoint(index).y;
+                // cc.log(pointX, pointY)
+                if(pointX && pointY && pointMgr.getStatus(index)) { // 判断是否有棋子，坐标是否存在
+                    if(moveChessNode) {
+                        moveChessNode.runAction(cc.moveTo(0.1, pointX, pointY));   // 根据事件传过来的目标点做移动
+                        cc.audioEngine.playEffect(that.putAudio, false);
+                        pointMgr.setStatus(index, false);     // 设置该位置已占用
+                        that.setOldPosition(oldPoint, index);
+                    }
+                }
             });
-        }
     },
 
-    start: function() {
-        let chessMgr = require('chessMgr');
-        // this.chessMove();
-        // Set
-        // chessMgr.move(200, 100);
+    setOldPosition: function(oldPoint) {
+        let pointMgr = require('pointMgr');
+        pointMgr.isInpoint(oldPoint, function(index) {
+            pointMgr.setStatus(index, true);        // 设置已移除棋子位置的状态
+        });
     },
+
     // 初始化放置棋子到默认位置
     initChessToPoint: function() {
         let that = this,
@@ -70,12 +101,14 @@ cc.Class({
                     newChess.setPosition(x, y);
                     newChess.name = 'whiteChess'+i;
                     cc.find('Canvas').on('pick', that.onPick, newChess),
-                    cc.find('Canvas').on('put', that.onPut, newChess),
                     newChess.on('touchstart', that.onTouchStart, newChess);
                 } else {
                     let newChess = cc.instantiate(this.blackChessPrefab);
                     that.node.addChild(newChess);
                     newChess.setPosition(x, y);
+                    newChess.name = 'whiteChess'+i;
+                    cc.find('Canvas').on('pick', that.onPick, newChess),
+                    newChess.on('touchstart', that.onTouchStart, newChess);
                 }
             } 
         }
