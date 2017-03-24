@@ -2,31 +2,73 @@
 cc._RFpush(module, '683d1m9EIVGZq90eO0xBzmw', 'chessMgr');
 // Script/chessMgr.js
 
-var chess = {
-    postionX: 0,
-    postionY: 0,
-    isDead: false
+// 棋子管理
+var chess = [];
+
+chess[0] = {
+    currentPositon: 0,
+    isDead: false,
+    color: 'white'
 };
 
+chess[1] = {
+    currentPositon: 1,
+    isDead: false,
+    color: 'white'
+};
+
+chess[2] = {
+    currentPositon: 2,
+    isDead: false,
+    color: 'white'
+};
+
+chess[3] = {};
+
+chess[4] = {
+    currentPositon: 4,
+    isDead: false,
+    color: 'black'
+};
+
+chess[5] = {
+    currentPositon: 5,
+    isDead: false,
+    color: 'black'
+};
+
+chess[6] = {
+    currentPositon: 6,
+    isDead: false,
+    color: 'black'
+};
+
+chess[7] = {};
+
 module.exports = {
-    // Set functions
-    setStatus: function setStatus(is) {
-        chess.isDead = is;
+    getStatus: function getStatus(index) {
+        return chess[index].isDead;
     },
-    move: function move(x, y) {
-        chess.postionX = x;
-        chess.postionY = y;
+    getCurrentPosition: function getCurrentPosition(index) {
+        return chess[index].currentPositon;
     },
-    // Get functions
-    getStatus: function getStatus() {
-        return chess.isDead;
+    getColor: function getColor(index) {
+        if (index != -1) {
+            return chess[index].color;
+        } else {
+            return false;
+        }
     },
-    getPositionX: function getPositionX() {
-        return chess.postionX;
+    setStatus: function setStatus(index, newStatus) {
+        chess[index].isDead = newStatus;
     },
-    getPositionY: function getPositionY() {
-        return chess.postionY;
+    setCurrentPosition: function setCurrentPosition(index, newPosition) {
+        chess[index].currentPositon = newPosition;
+    },
+    setColor: function setColor() {
+        // 理论上不能重新设置棋子颜色
     }
+
 };
 
 cc._RFpop();

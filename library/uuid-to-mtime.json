@@ -115,8 +115,8 @@
     "relativePath": "Scene/helloworld.fire"
   },
   "7b81d4e8-ec84-4716-968d-500ac1d78a54": {
-    "asset": 1490086728000,
-    "meta": 1490090846000,
+    "asset": 1490258664000,
+    "meta": 1490321143000,
     "relativePath": "Texture"
   },
   "a8027877-d8d6-4645-97a0-52d4a0123dba": {
@@ -294,11 +294,6 @@
     "meta": 1490078112000,
     "relativePath": "prefab/toggleGroup.prefab"
   },
-  "683d19bd-1085-4666-af74-78ed310739b0": {
-    "asset": 1490089744000,
-    "meta": 1490089774000,
-    "relativePath": "Script/chessMgr.js"
-  },
   "cdd5991c-64fc-4c37-8181-2cffd82e7cb4": {
     "asset": 1490093666000,
     "meta": 1490093667000,
@@ -320,13 +315,23 @@
     "relativePath": "Texture/chessPut.wav"
   },
   "01d78545-868c-4e6f-8da5-7a46a2809b0d": {
-    "asset": 1490267502000,
-    "meta": 1490267505000,
+    "asset": 1490347972000,
+    "meta": 1490348072000,
     "relativePath": "Script/pointMgr.js"
   },
+  "683d19bd-1085-4666-af74-78ed310739b0": {
+    "asset": 1490348874000,
+    "meta": 1490348879000,
+    "relativePath": "Script/chessMgr.js"
+  },
+  "e16d86e6-e0be-4c90-bf91-0ee10c102b69": {
+    "asset": 1490352086000,
+    "meta": 1490352086000,
+    "relativePath": "Texture/chessDie.mp3"
+  },
   "4b290a25-8cb9-4856-b2c7-73c7a313f819": {
-    "asset": 1490268644000,
-    "meta": 1490268791000,
+    "asset": 1490352425000,
+    "meta": 1490352428000,
     "relativePath": "Script/main.js"
   }
 }

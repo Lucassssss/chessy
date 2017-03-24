@@ -1,26 +1,68 @@
-let chess = {
-    postionX : 0,
-    postionY: 0,
-    isDead: false
+// 棋子管理
+let chess = [];
+
+chess[0] = {
+    currentPositon : 0,
+    isDead : false,
+    color: 'white'
 };
 
+chess[1] = {
+    currentPositon : 1,
+    isDead : false,
+    color: 'white'
+};
+
+chess[2] = {
+    currentPositon : 2,
+    isDead : false,
+    color: 'white'
+};
+
+chess[3] = {};
+
+chess[4] = {
+    currentPositon : 4,
+    isDead : false,
+    color: 'black'
+};
+
+chess[5] = {
+    currentPositon : 5,
+    isDead : false,
+    color: 'black'
+};
+
+chess[6] = {
+    currentPositon : 6,
+    isDead : false,
+    color: 'black'
+};
+
+chess[7] = {};
+
 module.exports = {
-    // Set functions
-    setStatus: function(is) {
-        chess.isDead = is;
+    getStatus: function(index) {
+        return chess[index].isDead;
     },
-    move: function(x, y) {
-        chess.postionX = x;
-        chess.postionY = y;
+    getCurrentPosition: function(index) {
+        return chess[index].currentPositon;
     },
-    // Get functions
-    getStatus: function() {
-        return chess.isDead;
+    getColor: function(index) {
+        if(index != -1) {
+            return chess[index].color;
+        } else {
+            return false;
+        }
     },
-    getPositionX: function() {
-        return chess.postionX;
+    setStatus: function(index, newStatus) {
+        chess[index].isDead = newStatus;
     },
-    getPositionY: function() {
-        return chess.postionY;
-    }
+    setCurrentPosition: function(index, newPosition) {
+        chess[index].currentPositon = newPosition;
+    },
+    setColor: function() {
+        // 理论上不能重新设置棋子颜色
+    },
+
 };

@@ -1,582 +1,91 @@
-2017-03-22T02:21:07.646Z - normal: Load ~/.CocosCreator/settings.json
-2017-03-22T02:21:07.660Z - normal: checking language setting...
-2017-03-22T02:21:07.661Z - normal: Language: zh
-2017-03-22T02:21:08.897Z - success: protocol editor-framework registered
-2017-03-22T02:21:08.898Z - success: protocol app registered
-2017-03-22T02:21:08.899Z - success: protocol theme registered
-2017-03-22T02:21:08.899Z - success: protocol profile registered
-2017-03-22T02:21:08.899Z - success: protocol packages registered
-2017-03-22T02:21:08.904Z - success: protocol unpack registerred
-2017-03-22T02:21:08.905Z - success: protocol disable-commonjs registerred
-2017-03-22T02:21:09.175Z - normal: connected!
-2017-03-22T02:21:09.178Z - normal: Check project /Users/apple/workspace/cocos/chessy
-2017-03-22T02:21:09.182Z - normal: Initializing Cocos2d
-2017-03-22T02:21:09.522Z - normal: Initializing Asset Database
-2017-03-22T02:21:09.564Z - success: protocol uuid registerred
-2017-03-22T02:21:09.564Z - success: protocol db registerred
-2017-03-22T02:21:09.565Z - success: protocol thumbnail registerred
-2017-03-22T02:21:09.565Z - normal: Loading editor/builtin packages
-2017-03-22T02:21:09.810Z - success: assets loaded
-2017-03-22T02:21:09.816Z - success: builder loaded
-2017-03-22T02:21:09.822Z - success: hierarchy loaded
-2017-03-22T02:21:09.829Z - success: inspector loaded
-2017-03-22T02:21:09.831Z - success: keystore loaded
-2017-03-22T02:21:09.837Z - success: node-library loaded
-2017-03-22T02:21:09.844Z - success: preferences loaded
-2017-03-22T02:21:09.871Z - success: project-importer loaded
-2017-03-22T02:21:09.878Z - success: project-settings loaded
-2017-03-22T02:21:09.884Z - success: ui-kit loaded
-2017-03-22T02:21:09.891Z - success: ui-grid loaded
-2017-03-22T02:21:09.899Z - success: scene loaded
-2017-03-22T02:21:09.901Z - success: sprite-editor loaded
-2017-03-22T02:21:09.986Z - success: store loaded
-2017-03-22T02:21:09.994Z - success: timeline loaded
-2017-03-22T02:21:09.995Z - normal: Loading builtin packages
-2017-03-22T02:21:10.002Z - success: anysdk loaded
-2017-03-22T02:21:10.006Z - success: asset-db-debugger loaded
-2017-03-22T02:21:10.008Z - success: code-editor loaded
-2017-03-22T02:21:10.009Z - success: color-picker loaded
-2017-03-22T02:21:10.017Z - success: console loaded
-2017-03-22T02:21:10.023Z - success: package-manager loaded
-2017-03-22T02:21:10.029Z - success: tester loaded
-2017-03-22T02:21:10.034Z - success: ui-kit-preview-extra loaded
-2017-03-22T02:21:10.038Z - success: ui-kit-preview loaded
-2017-03-22T02:21:10.045Z - success: ui-tree loaded
-2017-03-22T02:21:10.128Z - normal: Initializing project /Users/apple/workspace/cocos/chessy
-2017-03-22T02:21:10.132Z - normal: Loading packages
-2017-03-22T02:21:10.138Z - normal: Watching packages
-2017-03-22T02:21:10.155Z - normal: Run Application
-2017-03-22T02:21:10.791Z - success: preview server running at http://localhost:7456
-2017-03-22T02:21:17.484Z - normal: 1.4.0
-2017-03-22T02:23:14.617Z - normal: Compiled project javascript file successfully
-2017-03-22T02:33:26.772Z - normal: Compiled project javascript file successfully
-2017-03-22T02:45:54.079Z - normal: connected!
-2017-03-22T02:45:55.027Z - error: Error: Cannot read property 'object' of undefined
-TypeError: Cannot read property 'object' of undefined
-    at ObjectsRegistry.get (/Applications/CocosCreator.app/Contents/Resources/electron.asar/browser/objects-registry.js:44:28)
-    at EventEmitter.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/electron.asar/browser/rpc-server.js:334:31)
-    at emitThree (events.js:116:13)
-    at EventEmitter.emit (events.js:194:7)
-    at WebContents.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/electron.asar/browser/api/web-contents.js:219:13)
-    at emitTwo (events.js:106:13)
-    at WebContents.emit (events.js:191:7)
-    at metaToValue (/Applications/CocosCreator.app/Contents/Resources/electron.asar/renderer/api/remote.js:217:13)
-    at Object.descriptor.get [as projectInfo] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/renderer/api/remote.js:129:16)
-    at Object.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/editor-init.js:1:183)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-2017-03-22T02:45:55.131Z - error: ReferenceError: cc is not defined
-    at Object.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js:1:556)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-    at Object.EditorR.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js:1:440)
-    at file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/app-main.html:1:105
-2017-03-22T02:45:55.319Z - error: ReferenceError: _Scene is not defined
-    at app-top-bar._transformToolChanged (file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/app-top-bar.js:1:1158)
-    at app-top-bar._observerEffect (app://bower_components/polymer/polymer.html:1557:4)
-    at app-top-bar.<anonymous> (app://bower_components/polymer/polymer.html:1411:4)
-    at Array.forEach (native)
-    at app-top-bar._effectEffects (app://bower_components/polymer/polymer.html:1408:9)
-    at app-top-bar._propertySetter (app://bower_components/polymer/polymer.html:1393:6)
-    at app-top-bar.__setProperty (app://bower_components/polymer/polymer.html:1402:6)
-    at app-top-bar._applyConfig (app://bower_components/polymer/polymer.html:1929:6)
-    at app-top-bar._afterClientsReady (app://bower_components/polymer/polymer.html:1923:6)
-    at app-top-bar._ready (app://bower_components/polymer/polymer-mini.html:66:6)
-2017-03-22T02:45:55.462Z - error: ReferenceError: _Scene is not defined
-    at Object.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/dump/get-hierarchy-dump.js:1:439)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-    at Object.EditorR.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js:1:440)
-    at file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/hierarchy/panel/hierarchy-item.js:1:39
-2017-03-22T02:45:55.483Z - error: ReferenceError: cc is not defined
-    at file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/hierarchy/panel/hierarchy-tree.js:1:122
-    at file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/hierarchy/panel/hierarchy-tree.js:1:14504
-2017-03-22T02:45:55.526Z - error: TypeError: this.$.searchResult.filter is not a function
-    at editor-hierarchy._onSearchPatternChanged (file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/hierarchy/panel/panel.js:1:5446)
-    at editor-hierarchy._observerEffect (app://bower_components/polymer/polymer.html:1557:4)
-    at editor-hierarchy.<anonymous> (app://bower_components/polymer/polymer.html:1411:4)
-    at Array.forEach (native)
-    at editor-hierarchy._effectEffects (app://bower_components/polymer/polymer.html:1408:9)
-    at editor-hierarchy._propertySetter (app://bower_components/polymer/polymer.html:1393:6)
-    at editor-hierarchy.__setProperty (app://bower_components/polymer/polymer.html:1402:6)
-    at editor-hierarchy._applyConfig (app://bower_components/polymer/polymer.html:1929:6)
-    at editor-hierarchy._afterClientsReady (app://bower_components/polymer/polymer.html:1923:6)
-    at editor-hierarchy._ready (app://bower_components/polymer/polymer-mini.html:66:6)
-2017-03-22T02:45:55.881Z - error: Error: Cannot read property 'object' of undefined
-TypeError: Cannot read property 'object' of undefined
-    at ObjectsRegistry.get (/Applications/CocosCreator.app/Contents/Resources/electron.asar/browser/objects-registry.js:44:28)
-    at EventEmitter.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/electron.asar/browser/rpc-server.js:315:31)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:201:7)
-    at WebContents.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/electron.asar/browser/api/web-contents.js:219:13)
-    at emitTwo (events.js:106:13)
-    at WebContents.emit (events.js:191:7)
-    at metaToValue (/Applications/CocosCreator.app/Contents/Resources/electron.asar/renderer/api/remote.js:217:13)
-    at Object.remoteMemberFunction (/Applications/CocosCreator.app/Contents/Resources/electron.asar/renderer/api/remote.js:111:18)
-    at Object.Protocol.url (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/protocol.js:1:827)
-    at Object.EditorR.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js:1:456)
-    at packages://ui-grid/widget/pixi-grid.js:1:235
-    at packages://ui-grid/widget/pixi-grid.js:1:9256
-2017-03-22T02:45:55.965Z - error: ReferenceError: _Scene is not defined
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/gizmos/init.js:1:184
-    at Object.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/gizmos/init.js:1:993)
-    at Module._compile (module.js:556:32)
-    at Object.Module._extensions..js (module.js:565:10)
-    at Module.load (module.js:473:32)
-    at tryModuleLoad (module.js:432:12)
-    at Function.Module._load (module.js:424:3)
-    at Module.require (module.js:483:17)
-    at require (internal/module.js:20:19)
-    at Object.EditorR.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js:1:440)
-2017-03-22T02:45:56.016Z - error: ReferenceError: _Scene is not defined
-    at editor-scene.ready (file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/scene/panel/scene.js:1:1164)
-    at editor-scene._invokeBehavior (app://bower_components/polymer/polymer-micro.html:356:4)
-    at editor-scene._doBehavior (app://bower_components/polymer/polymer-micro.html:351:6)
-    at editor-scene._readySelf (app://bower_components/polymer/polymer-mini.html:80:6)
-    at editor-scene._ready (app://bower_components/polymer/polymer-mini.html:67:6)
-    at editor-scene._tryReady (app://bower_components/polymer/polymer-mini.html:56:6)
-    at editor-scene._initFeatures (app://bower_components/polymer/polymer.html:3388:6)
-    at editor-scene.createdCallback (app://bower_components/polymer/polymer-micro.html:151:6)
-    at editor-scene._factory (app://bower_components/polymer/polymer-micro.html:404:34)
-    at editor-scene.ctor (app://bower_components/polymer/polymer-micro.html:391:13)
-2017-03-22T02:45:56.021Z - warn: Failed to register shortcut for element #sceneView, cannot find it.
-2017-03-22T02:45:56.037Z - error: ReferenceError: _Scene is not defined
-    at file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/scene/panel/scene.js:1:2691
-2017-03-22T02:45:56.042Z - error: Error: Cannot read property 'object' of undefined
-TypeError: Cannot read property 'object' of undefined
-    at ObjectsRegistry.get (/Applications/CocosCreator.app/Contents/Resources/electron.asar/browser/objects-registry.js:44:28)
-    at EventEmitter.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/electron.asar/browser/rpc-server.js:315:31)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:201:7)
-    at WebContents.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/electron.asar/browser/api/web-contents.js:219:13)
-    at emitTwo (events.js:106:13)
-    at WebContents.emit (events.js:191:7)
-    at metaToValue (/Applications/CocosCreator.app/Contents/Resources/electron.asar/renderer/api/remote.js:217:13)
-    at Object.remoteMemberFunction (/Applications/CocosCreator.app/Contents/Resources/electron.asar/renderer/api/remote.js:111:18)
-    at Object.Protocol.url (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/protocol.js:1:827)
-    at Object.EditorR.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js:1:456)
-    at file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/node-library/panel/prefab.js:1:39
-    at file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/node-library/panel/prefab.js:1:1934
-2017-03-22T02:45:56.044Z - error: Error: Cannot read property 'object' of undefined
-TypeError: Cannot read property 'object' of undefined
-    at ObjectsRegistry.get (/Applications/CocosCreator.app/Contents/Resources/electron.asar/browser/objects-registry.js:44:28)
-    at EventEmitter.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/electron.asar/browser/rpc-server.js:315:31)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:201:7)
-    at WebContents.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/electron.asar/browser/api/web-contents.js:219:13)
-    at emitTwo (events.js:106:13)
-    at WebContents.emit (events.js:191:7)
-    at metaToValue (/Applications/CocosCreator.app/Contents/Resources/electron.asar/renderer/api/remote.js:217:13)
-    at Object.remoteMemberFunction (/Applications/CocosCreator.app/Contents/Resources/electron.asar/renderer/api/remote.js:111:18)
-    at Object.Protocol.url (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/protocol.js:1:827)
-    at Object.EditorR.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js:1:456)
-    at file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/node-library/panel/panel.js:1:39
-    at file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/node-library/panel/panel.js:1:1848
-2017-03-22T02:45:56.046Z - error: Error: Failed to load panel node-library: Cannot find panel frame constructor in "UI.PolymerUtils.panels"
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/polymer-utils.js:1:5701
-    at HTMLElement.Polymer.Base.importHref.PolymerUtils.importing (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/polymer-utils.js:1:2849)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:8503
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/polymer-utils.js:1:5699
-    at HTMLElement.Polymer.Base.importHref.PolymerUtils.importing (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/polymer-utils.js:1:2849)
-2017-03-22T02:45:56.135Z - error: Error: Cannot read property 'object' of undefined
-TypeError: Cannot read property 'object' of undefined
-    at ObjectsRegistry.get (/Applications/CocosCreator.app/Contents/Resources/electron.asar/browser/objects-registry.js:44:28)
-    at EventEmitter.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/electron.asar/browser/rpc-server.js:315:31)
-    at emitMany (events.js:127:13)
-    at EventEmitter.emit (events.js:201:7)
-    at WebContents.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/electron.asar/browser/api/web-contents.js:219:13)
-    at emitTwo (events.js:106:13)
-    at WebContents.emit (events.js:191:7)
-    at metaToValue (/Applications/CocosCreator.app/Contents/Resources/electron.asar/renderer/api/remote.js:217:13)
-    at Object.remoteMemberFunction (/Applications/CocosCreator.app/Contents/Resources/electron.asar/renderer/api/remote.js:111:18)
-    at Object.Protocol.url (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/protocol.js:1:827)
-    at Object.EditorR.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js:1:456)
-    at file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/timeline/panel/timeline.js:1:28
-2017-03-22T02:45:56.137Z - error: Error: Failed to load panel timeline: Cannot find panel frame constructor in "UI.PolymerUtils.panels"
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/polymer-utils.js:1:5701
-    at HTMLElement.Polymer.Base.importHref.PolymerUtils.importing (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/polymer-utils.js:1:2849)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:8503
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/polymer-utils.js:1:5699
-    at HTMLElement.Polymer.Base.importHref.PolymerUtils.importing (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/polymer-utils.js:1:2849)
-2017-03-22T02:45:56.141Z - error: TypeError: Cannot read property '_dockable' of null
-    at ui-dock._collapse (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/behaviors/dockable.js:1:927)
-    at ui-dock.value (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/dock/dock.js:1:2071)
-    at ui-dock.value (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/dock/dock.js:1:2043)
-    at ui-main-dock.value (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/dock/dock.js:1:2043)
-    at Object.DockUtils.collapse (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:7548)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:8640
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:52:16
-    at done (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:246:17)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:44:16
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:8523
-2017-03-22T02:46:22.412Z - error: TypeError: this.$.tree.dumpItemStates is not a function
-    at editor-hierarchy.close (file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/hierarchy/panel/panel.js:1:523)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/renderer.js:1:1517
-    at Array.forEach (native)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/renderer.js:1:1474
-2017-03-22T02:46:22.579Z - normal: connected!
-2017-03-22T02:46:27.542Z - normal: 1.4.0
-2017-03-22T02:46:30.099Z - warn: The Asset used by component "main" in scene "首页.fire" is missing. Detailed information:
-Node path: "Canvas"
-Asset url: "db://assets/Scene/首页.fire"
-Missing uuid: "877300ab-d4f0-4f86-ad4a-b6a301302c66"
-
-2017-03-22T06:04:33.683Z - normal: Compiled project javascript file successfully
-2017-03-22T06:04:35.469Z - warn: The Asset used is missing. Detailed information:
-Missing uuid: "e9857579-cf67-454b-b8a2-92378deb4bdc"
-
-2017-03-22T06:04:35.499Z - warn: The Asset used is missing. Detailed information:
-Missing uuid: "24ea2285-c439-456a-9f83-f682a59cafbc"
-
-2017-03-22T06:04:35.504Z - warn: The Asset used is missing. Detailed information:
-Missing uuid: "bd325da1-dd55-44a4-a506-9b56300119c3"
-
-2017-03-22T06:06:11.138Z - normal: Compiled project javascript file successfully
-2017-03-22T06:08:19.590Z - normal: Compiled project javascript file successfully
-2017-03-22T06:09:52.278Z - normal: Compiled project javascript file successfully
-2017-03-22T06:10:50.717Z - normal: Compiled project javascript file successfully
-2017-03-22T06:13:23.718Z - normal: Compiled project javascript file successfully
-2017-03-22T06:13:44.324Z - normal: Compiled project javascript file successfully
-2017-03-22T06:16:00.774Z - normal: Compiled project javascript file successfully
-2017-03-22T06:16:42.399Z - normal: Compiled project javascript file successfully
-2017-03-22T06:19:18.123Z - normal: Compiled project javascript file successfully
-2017-03-22T06:27:09.545Z - normal: Compiled project javascript file successfully
-2017-03-22T06:27:47.433Z - normal: Compiled project javascript file successfully
-2017-03-22T06:28:26.076Z - normal: Compiled project javascript file successfully
-2017-03-22T06:29:23.536Z - normal: Compiled project javascript file successfully
-2017-03-22T06:30:24.644Z - normal: Compiled project javascript file successfully
-2017-03-22T06:36:12.095Z - normal: Compiled project javascript file successfully
-2017-03-22T06:45:23.583Z - normal: Compiled project javascript file successfully
-2017-03-22T06:46:04.017Z - normal: Compiled project javascript file successfully
-2017-03-22T06:46:52.927Z - normal: Compiled project javascript file successfully
-2017-03-22T06:48:34.508Z - normal: Compiled project javascript file successfully
-2017-03-22T06:49:01.016Z - normal: Compiled project javascript file successfully
-2017-03-22T06:51:35.435Z - normal: Compiled project javascript file successfully
-2017-03-22T06:52:02.425Z - normal: Compiled project javascript file successfully
-2017-03-22T06:54:36.116Z - normal: Compiled project javascript file successfully
-2017-03-22T06:55:05.496Z - normal: Compiled project javascript file successfully
-2017-03-22T06:56:19.337Z - normal: Compiled project javascript file successfully
-2017-03-22T06:57:06.942Z - normal: Compiled project javascript file successfully
-2017-03-22T06:57:26.645Z - normal: Compiled project javascript file successfully
-2017-03-22T06:57:50.751Z - normal: Compiled project javascript file successfully
-2017-03-22T07:09:48.975Z - normal: Compiled project javascript file successfully
-2017-03-22T07:10:15.684Z - normal: Compiled project javascript file successfully
-2017-03-22T07:13:51.571Z - normal: Compiled project javascript file successfully
-2017-03-22T07:15:30.709Z - normal: Compiled project javascript file successfully
-2017-03-22T07:16:11.917Z - normal: Compiled project javascript file successfully
-2017-03-22T07:17:30.150Z - normal: Compiled project javascript file successfully
-2017-03-22T07:19:13.064Z - normal: Compiled project javascript file successfully
-2017-03-22T07:23:45.143Z - normal: Compiled project javascript file successfully
-2017-03-22T07:35:47.131Z - normal: Compiled project javascript file successfully
-2017-03-22T07:36:19.014Z - normal: Compiled project javascript file successfully
-2017-03-22T07:36:41.230Z - normal: Compiled project javascript file successfully
-2017-03-22T07:36:58.569Z - normal: Compiled project javascript file successfully
-2017-03-22T08:09:01.903Z - normal: Compiled project javascript file successfully
-2017-03-22T08:38:29.467Z - normal: Compiled project javascript file successfully
-2017-03-22T08:40:48.426Z - normal: Compiled project javascript file successfully
-2017-03-22T08:42:37.060Z - normal: Compiled project javascript file successfully
-2017-03-22T08:45:07.828Z - normal: Compiled project javascript file successfully
-2017-03-22T08:45:38.114Z - normal: Compiled project javascript file successfully
-2017-03-22T08:58:41.388Z - normal: Compiled project javascript file successfully
-2017-03-22T08:59:58.827Z - normal: Compiled project javascript file successfully
-2017-03-22T09:01:07.057Z - normal: Compiled project javascript file successfully
-2017-03-22T09:02:33.338Z - normal: Compiled project javascript file successfully
-2017-03-22T09:05:26.982Z - normal: Compiled project javascript file successfully
-2017-03-22T09:44:20.373Z - normal: Compiled project javascript file successfully
-2017-03-22T09:47:30.439Z - normal: Compiled project javascript file successfully
-2017-03-22T09:52:19.504Z - normal: Compiled project javascript file successfully
-2017-03-22T09:52:58.082Z - normal: Compiled project javascript file successfully
-2017-03-22T09:53:59.833Z - normal: Compiled project javascript file successfully
-2017-03-22T09:54:32.993Z - normal: Compiled project javascript file successfully
-2017-03-22T09:55:45.431Z - normal: Compiled project javascript file successfully
-2017-03-22T09:57:13.741Z - normal: Compiled project javascript file successfully
-2017-03-22T09:59:26.407Z - normal: Compiled project javascript file successfully
-2017-03-22T10:01:45.994Z - normal: Compiled project javascript file successfully
-2017-03-22T10:02:23.506Z - normal: Compiled project javascript file successfully
-2017-03-22T10:04:25.922Z - normal: Compiled project javascript file successfully
-2017-03-22T10:05:35.104Z - normal: Compiled project javascript file successfully
-2017-03-22T10:06:23.872Z - normal: Compiled project javascript file successfully
-2017-03-22T10:06:56.653Z - normal: Compiled project javascript file successfully
-2017-03-22T10:07:36.430Z - normal: Compiled project javascript file successfully
-2017-03-22T10:08:49.091Z - normal: Compiled project javascript file successfully
-2017-03-22T10:09:20.262Z - normal: Compiled project javascript file successfully
-2017-03-22T10:11:59.724Z - normal: Compiled project javascript file successfully
-2017-03-22T10:13:14.322Z - normal: Compiled project javascript file successfully
-2017-03-22T10:15:27.103Z - normal: Compiled project javascript file successfully
-2017-03-22T10:18:29.083Z - normal: Compiled project javascript file successfully
-2017-03-22T10:19:57.771Z - normal: Compiled project javascript file successfully
-2017-03-22T10:20:37.039Z - normal: Compiled project javascript file successfully
-2017-03-22T10:21:16.573Z - normal: Compiled project javascript file successfully
-2017-03-22T10:21:54.022Z - normal: Compiled project javascript file successfully
-2017-03-22T10:22:06.511Z - normal: Compiled project javascript file successfully
-2017-03-22T10:26:20.970Z - normal: Compiled project javascript file successfully
-2017-03-22T10:26:47.943Z - normal: Compiled project javascript file successfully
-2017-03-22T10:29:04.576Z - normal: Compiled project javascript file successfully
-2017-03-22T10:30:10.785Z - normal: Compiled project javascript file successfully
-2017-03-22T10:30:34.617Z - normal: Compiled project javascript file successfully
-2017-03-22T10:31:03.899Z - normal: Compiled project javascript file successfully
-2017-03-22T10:33:22.023Z - normal: Compiled project javascript file successfully
-2017-03-22T10:36:16.914Z - normal: Compiled project javascript file successfully
-2017-03-22T10:43:32.308Z - normal: Compiled project javascript file successfully
-2017-03-22T10:44:17.167Z - normal: Compiled project javascript file successfully
-2017-03-22T10:46:08.126Z - normal: Compiled project javascript file successfully
-2017-03-22T10:50:09.049Z - normal: Compiled project javascript file successfully
-2017-03-22T10:50:47.189Z - normal: Compiled project javascript file successfully
-2017-03-22T10:52:28.648Z - normal: Compiled project javascript file successfully
-2017-03-22T10:53:27.951Z - normal: Compiled project javascript file successfully
-2017-03-22T10:53:50.265Z - normal: Compiled project javascript file successfully
-2017-03-22T10:55:19.337Z - normal: Compiled project javascript file successfully
-2017-03-22T11:00:07.264Z - normal: Compiled project javascript file successfully
-2017-03-22T11:02:45.469Z - normal: Compiled project javascript file successfully
-2017-03-22T11:05:06.661Z - normal: Compiled project javascript file successfully
-2017-03-22T11:08:35.735Z - normal: Compiled project javascript file successfully
-2017-03-22T11:09:51.857Z - normal: Compiled project javascript file successfully
-2017-03-22T11:10:32.674Z - normal: Compiled project javascript file successfully
-2017-03-22T11:11:07.130Z - normal: Compiled project javascript file successfully
-2017-03-22T11:11:19.972Z - normal: Compiled project javascript file successfully
-2017-03-22T11:13:33.357Z - failed: [db-task][sync-changes] Failed to import asset /Users/apple/workspace/cocos/chessy/assets/Script/main.js, message: Compile error: SyntaxError: unknown: Unexpected token (48:61)
-                console.log(getLocationX, LocationY)
-            });
-            this.runAction(cc.moveTo(getLocationX, LocationY);
-        }
-    },
-
-    at Parser.pp.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/location.js:24:13)
-    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/util.js:82:8)
-    at Parser.pp.expect (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/util.js:76:33)
-    at Parser.pp.parseExprList (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:785:12)
-    at Parser.pp.parseSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:270:29)
-    at Parser.pp.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:240:17)
-    at Parser.pp.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:217:19)
-    at Parser.pp.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:163:19)
-    at Parser.pp.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:145:19)
-    at Parser.pp.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:112:19)
-2017-03-22T11:13:46.944Z - failed: [db-task][sync-changes] Failed to import asset /Users/apple/workspace/cocos/chessy/assets/Script/main.js, message: Compile error: SyntaxError: unknown: Unexpected token (48:61)
-                console.log(getLocationX, LocationY)
-            });
-            this.runAction(cc.moveTo(getLocationX, LocationY);
-        }
-    },
-
-    at Parser.pp.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/location.js:24:13)
-    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/util.js:82:8)
-    at Parser.pp.expect (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/util.js:76:33)
-    at Parser.pp.parseExprList (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:785:12)
-    at Parser.pp.parseSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:270:29)
-    at Parser.pp.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:240:17)
-    at Parser.pp.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:217:19)
-    at Parser.pp.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:163:19)
-    at Parser.pp.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:145:19)
-    at Parser.pp.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:112:19)
-2017-03-22T11:15:31.503Z - normal: Compiled project javascript file successfully
-2017-03-22T11:25:25.049Z - normal: Compiled project javascript file successfully
-2017-03-22T11:25:59.252Z - normal: Compiled project javascript file successfully
-2017-03-22T11:26:49.600Z - normal: Compiled project javascript file successfully
-2017-03-22T11:28:57.118Z - normal: Compiled project javascript file successfully
-2017-03-22T11:29:30.744Z - normal: Compiled project javascript file successfully
-2017-03-22T11:30:19.114Z - normal: Compiled project javascript file successfully
-2017-03-22T11:34:30.739Z - normal: Compiled project javascript file successfully
-2017-03-22T11:35:20.079Z - normal: Compiled project javascript file successfully
-2017-03-22T11:36:29.110Z - normal: Compiled project javascript file successfully
-2017-03-22T11:37:14.207Z - normal: Compiled project javascript file successfully
-2017-03-22T11:37:52.849Z - normal: Compiled project javascript file successfully
-2017-03-22T11:38:28.822Z - normal: Compiled project javascript file successfully
-2017-03-22T11:40:00.903Z - normal: Compiled project javascript file successfully
-2017-03-23T02:17:38.054Z - normal: Compiled project javascript file successfully
-2017-03-23T02:27:15.540Z - normal: Compiled project javascript file successfully
-2017-03-23T02:27:56.658Z - normal: Compiled project javascript file successfully
-2017-03-23T02:45:00.058Z - normal: Compiled project javascript file successfully
-2017-03-23T02:45:28.627Z - normal: Compiled project javascript file successfully
-2017-03-23T02:46:29.778Z - normal: Compiled project javascript file successfully
-2017-03-23T02:49:00.209Z - normal: Compiled project javascript file successfully
-2017-03-23T02:50:04.605Z - normal: Compiled project javascript file successfully
-2017-03-23T02:51:17.015Z - normal: Compiled project javascript file successfully
-2017-03-23T02:52:25.541Z - normal: Compiled project javascript file successfully
-2017-03-23T02:53:51.908Z - normal: Compiled project javascript file successfully
-2017-03-23T02:56:41.281Z - normal: Compiled project javascript file successfully
-2017-03-23T02:58:09.033Z - normal: Compiled project javascript file successfully
-2017-03-23T02:58:54.454Z - normal: Compiled project javascript file successfully
-2017-03-23T02:59:51.609Z - normal: Compiled project javascript file successfully
-2017-03-23T03:01:45.760Z - normal: Compiled project javascript file successfully
-2017-03-23T03:04:24.206Z - normal: Compiled project javascript file successfully
-2017-03-23T03:07:15.704Z - normal: Compiled project javascript file successfully
-2017-03-23T07:02:20.263Z - normal: Compiled project javascript file successfully
-2017-03-23T07:20:38.869Z - normal: Compiled project javascript file successfully
-2017-03-23T07:21:24.956Z - normal: Compiled project javascript file successfully
-2017-03-23T07:22:11.911Z - normal: Compiled project javascript file successfully
-2017-03-23T07:23:08.242Z - normal: Compiled project javascript file successfully
-2017-03-23T07:28:26.353Z - normal: Compiled project javascript file successfully
-2017-03-23T07:38:29.729Z - normal: Compiled project javascript file successfully
-2017-03-23T07:39:02.549Z - normal: Compiled project javascript file successfully
-2017-03-23T07:48:09.762Z - normal: Compiled project javascript file successfully
-2017-03-23T08:09:59.365Z - normal: Compiled project javascript file successfully
-2017-03-23T08:10:30.734Z - normal: Compiled project javascript file successfully
-2017-03-23T08:12:01.803Z - normal: Compiled project javascript file successfully
-2017-03-23T08:14:14.260Z - normal: Compiled project javascript file successfully
-2017-03-23T08:15:05.666Z - normal: Compiled project javascript file successfully
-2017-03-23T08:15:33.204Z - normal: Compiled project javascript file successfully
-2017-03-23T08:16:41.752Z - normal: Compiled project javascript file successfully
-2017-03-23T08:17:18.018Z - normal: Compiled project javascript file successfully
-2017-03-23T08:31:09.060Z - normal: Compiled project javascript file successfully
-2017-03-23T08:31:09.270Z - warn: The 'type' attribute of 'main.pickAudio' must be child class of cc.Asset, otherwise you should use 'url: cc.AudioClip' instead
-2017-03-23T08:31:09.271Z - warn: The 'type' attribute of 'main.putAudio' must be child class of cc.Asset, otherwise you should use 'url: cc.AudioClip' instead
-2017-03-23T08:36:29.761Z - normal: Compiled project javascript file successfully
-2017-03-23T08:36:29.978Z - warn: The 'type' attribute of 'main.pickAudio' must be child class of cc.Asset, otherwise you should use 'url: cc.AudioClip' instead
-2017-03-23T08:36:51.270Z - normal: Compiled project javascript file successfully
-2017-03-23T08:36:51.458Z - warn: The 'type' attribute of 'main.pickAudio' must be child class of cc.Asset, otherwise you should use 'url: cc.AudioClip' instead
-2017-03-23T08:36:51.460Z - warn: The 'type' attribute of 'main.putAudio' must be child class of cc.Asset, otherwise you should use 'url: cc.AudioClip' instead
-2017-03-23T08:37:56.381Z - normal: Compiled project javascript file successfully
-2017-03-23T08:39:34.076Z - normal: Compiled project javascript file successfully
-2017-03-23T08:39:34.186Z - warn: The 'type' attribute of 'main.pickAudio' must be child class of cc.Asset, otherwise you should use 'url: cc.AudioClip' instead
-2017-03-23T08:39:34.187Z - warn: The 'type' attribute of 'main.putAudio' must be child class of cc.Asset, otherwise you should use 'url: cc.AudioClip' instead
-2017-03-23T08:40:06.893Z - normal: Compiled project javascript file successfully
-2017-03-23T08:40:39.551Z - failed: [db-task][sync-changes] Failed to import asset /Users/apple/workspace/cocos/chessy/assets/Script/main.js, message: Compile error: SyntaxError: unknown: Unexpected token (57:4)
-        moveChessNode.runAction(cc.moveTo(0.1, this.node.convertToNodeSpaceAR(e.getLocation())));   // 根据事件传过来的目标点做移动
-        cc.audioEngine.
-    },
-
-    start: function() {
-        let chessMgr = require('chessMgr');
-    at Parser.pp.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/location.js:24:13)
-    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/util.js:82:8)
-    at Parser.pp.parseIdent (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:818:10)
-    at Parser.pp.parseSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:254:28)
-    at Parser.pp.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:240:17)
-    at Parser.pp.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:217:19)
-    at Parser.pp.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:163:19)
-    at Parser.pp.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:145:19)
-    at Parser.pp.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:112:19)
-    at Parser.pp.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:79:19)
-2017-03-23T08:41:14.917Z - normal: Compiled project javascript file successfully
-2017-03-23T08:59:02.867Z - normal: Compiled project javascript file successfully
-2017-03-23T08:59:57.218Z - normal: Compiled project javascript file successfully
-2017-03-23T09:25:29.411Z - failed: [db-task][sync-changes] Failed to import asset /Users/apple/workspace/cocos/chessy/assets/Script/pointMgr.js, message: Compile error: SyntaxError: unknown: Unexpected token (85:15)
-            }
-
-            if() {
-                
-            }
-
-    at Parser.pp.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/location.js:24:13)
-    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/util.js:82:8)
-    at Parser.pp.parseExprAtom (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:425:12)
-    at Parser.parseExprAtom (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/plugins/jsx/index.js:412:22)
-    at Parser.pp.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:236:19)
-    at Parser.pp.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:217:19)
-    at Parser.pp.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:163:19)
-    at Parser.pp.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:145:19)
-    at Parser.pp.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:112:19)
-    at Parser.pp.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:79:19)
-2017-03-23T09:26:55.335Z - error: Unknown object to restore
-    at Object.restoreObject (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/scene-undo-impl.js:1:2543)
-    at o.value (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/scene-undo.js:1:1411)
-    at o.value (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/share/undo.js:1:1812)
-    at n.value (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/share/undo.js:1:2851)
-    at Object.undo (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/scene-undo.js:1:12856)
-    at editor-scene.scene:undo (file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/scene/panel/scene.js:1:11932)
-    at Object.Panel._dispatch (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:2294)
-    at EventEmitter.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:5065)
-    at emitThree (events.js:116:13)
-    at EventEmitter.emit (events.js:194:7)
-2017-03-23T09:26:56.720Z - error: Unknown object to restore
-    at Object.restoreObject (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/scene-undo-impl.js:1:2543)
-    at o.value (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/scene-undo.js:1:1411)
-    at o.value (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/share/undo.js:1:1812)
-    at n.value (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/share/undo.js:1:2851)
-    at Object.undo (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/scene-undo.js:1:12856)
-    at editor-scene.scene:undo (file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/scene/panel/scene.js:1:11932)
-    at Object.Panel._dispatch (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:2294)
-    at EventEmitter.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:5065)
-    at emitThree (events.js:116:13)
-    at EventEmitter.emit (events.js:194:7)
-2017-03-23T09:26:58.256Z - error: Unknown object to restore
-    at Object.restoreObject (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/scene-undo-impl.js:1:2543)
-    at o.value (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/scene-undo.js:1:1411)
-    at o.value (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/share/undo.js:1:1812)
-    at n.value (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/share/undo.js:1:2851)
-    at Object.undo (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/scene-undo.js:1:12856)
-    at editor-scene.scene:undo (file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/scene/panel/scene.js:1:11932)
-    at Object.Panel._dispatch (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:2294)
-    at EventEmitter.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:5065)
-    at emitThree (events.js:116:13)
-    at EventEmitter.emit (events.js:194:7)
-2017-03-23T09:27:09.148Z - error: Unknown object to restore
-    at Object.restoreObject (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/scene-undo-impl.js:1:2543)
-    at o.value (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/scene-undo.js:1:1803)
-    at o.value (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/share/undo.js:1:1908)
-    at n.value (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/share/undo.js:1:3028)
-    at Object.redo (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/scene-undo.js:1:12916)
-    at editor-scene.scene:redo (file:///Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/scene/panel/scene.js:1:11976)
-    at Object.Panel._dispatch (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:2294)
-    at EventEmitter.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:5065)
-    at emitThree (events.js:116:13)
-    at EventEmitter.emit (events.js:194:7)
-2017-03-23T09:28:51.300Z - normal: Compiled project javascript file successfully
-2017-03-23T10:06:05.118Z - normal: Compiled project javascript file successfully
-2017-03-23T10:06:40.420Z - failed: [db-task][sync-changes] Failed to import asset /Users/apple/workspace/cocos/chessy/assets/Script/main.js, message: Compile error: SyntaxError: unknown: Unexpected token (56:14)
-            moveChessNode = cc.find('Canvas').getChildByName(movingChessName),  // 可移动棋子的节点
-            targetPoint = this.node.convertToNodeSpaceAR(e.getLocation()),
-            cc.log(targetPoint)
-            pointMgr = require('pointMgr');
-            pointMgr.isInpoint(targetPoint, function(point) {
-                cc.log('callback', point);
-    at Parser.pp.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/location.js:24:13)
-    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/util.js:82:8)
-    at Parser.pp.semicolon (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/util.js:69:81)
-    at Parser.pp.parseVarStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/statement.js:371:8)
-    at Parser.pp.parseStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/statement.js:99:19)
-    at Parser.parseStatement (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/plugins/flow.js:655:22)
-    at Parser.pp.parseBlock (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/statement.js:442:21)
-    at Parser.pp.parseFunctionBody (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/expression.js:747:22)
-    at Parser.parseFunctionBody (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/plugins/flow.js:643:20)
-    at Parser.pp.parseFunction (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/parser/statement.js:524:8)
-2017-03-23T10:07:31.275Z - normal: Compiled project javascript file successfully
-2017-03-23T10:08:06.196Z - normal: Compiled project javascript file successfully
-2017-03-23T10:09:34.885Z - normal: Compiled project javascript file successfully
-2017-03-23T10:09:47.891Z - normal: Compiled project javascript file successfully
-2017-03-23T10:11:19.914Z - normal: Compiled project javascript file successfully
-2017-03-23T10:12:09.272Z - normal: Compiled project javascript file successfully
-2017-03-23T10:15:28.616Z - normal: Compiled project javascript file successfully
-2017-03-23T10:16:15.178Z - normal: Compiled project javascript file successfully
-2017-03-23T10:18:21.895Z - normal: Compiled project javascript file successfully
-2017-03-23T10:21:09.077Z - normal: Compiled project javascript file successfully
-2017-03-23T10:22:52.740Z - normal: Compiled project javascript file successfully
-2017-03-23T10:24:10.312Z - normal: Compiled project javascript file successfully
-2017-03-23T10:27:49.168Z - normal: Compiled project javascript file successfully
-2017-03-23T10:31:07.636Z - normal: Compiled project javascript file successfully
-2017-03-23T10:32:19.089Z - normal: Compiled project javascript file successfully
-2017-03-23T10:35:53.532Z - normal: Compiled project javascript file successfully
-2017-03-23T10:38:35.270Z - normal: Compiled project javascript file successfully
-2017-03-23T10:42:20.692Z - normal: Compiled project javascript file successfully
-2017-03-23T10:44:32.400Z - normal: Compiled project javascript file successfully
-2017-03-23T10:55:33.266Z - normal: Compiled project javascript file successfully
-2017-03-23T10:56:04.314Z - normal: Compiled project javascript file successfully
-2017-03-23T10:57:58.538Z - normal: Compiled project javascript file successfully
-2017-03-23T10:58:33.637Z - normal: Compiled project javascript file successfully
-2017-03-23T11:01:34.462Z - normal: Compiled project javascript file successfully
-2017-03-23T11:08:27.424Z - normal: Compiled project javascript file successfully
-2017-03-23T11:09:57.157Z - normal: Compiled project javascript file successfully
-2017-03-23T11:11:14.091Z - normal: Compiled project javascript file successfully
-2017-03-23T11:11:50.202Z - normal: Compiled project javascript file successfully
-2017-03-23T11:12:14.719Z - normal: Compiled project javascript file successfully
-2017-03-23T11:23:03.759Z - normal: Compiled project javascript file successfully
-2017-03-23T11:23:43.139Z - normal: Compiled project javascript file successfully
-2017-03-23T11:25:02.160Z - normal: Compiled project javascript file successfully
-2017-03-23T11:28:25.733Z - normal: Compiled project javascript file successfully
-2017-03-23T11:30:00.179Z - normal: Compiled project javascript file successfully
-2017-03-23T11:33:18.131Z - normal: Compiled project javascript file successfully
+2017-03-24T02:05:41.473Z - normal: Load ~/.CocosCreator/settings.json
+2017-03-24T02:05:41.483Z - normal: checking language setting...
+2017-03-24T02:05:41.484Z - normal: Language: zh
+2017-03-24T02:05:42.343Z - success: protocol editor-framework registered
+2017-03-24T02:05:42.343Z - success: protocol app registered
+2017-03-24T02:05:42.343Z - success: protocol theme registered
+2017-03-24T02:05:42.344Z - success: protocol profile registered
+2017-03-24T02:05:42.344Z - success: protocol packages registered
+2017-03-24T02:05:42.348Z - success: protocol unpack registerred
+2017-03-24T02:05:42.349Z - success: protocol disable-commonjs registerred
+2017-03-24T02:05:42.548Z - normal: connected!
+2017-03-24T02:05:42.551Z - normal: Check project /Users/apple/workspace/cocos/chessy
+2017-03-24T02:05:42.555Z - normal: Initializing Cocos2d
+2017-03-24T02:05:42.863Z - normal: Initializing Asset Database
+2017-03-24T02:05:42.907Z - success: protocol uuid registerred
+2017-03-24T02:05:42.908Z - success: protocol db registerred
+2017-03-24T02:05:42.908Z - success: protocol thumbnail registerred
+2017-03-24T02:05:42.908Z - normal: Loading editor/builtin packages
+2017-03-24T02:05:43.143Z - success: assets loaded
+2017-03-24T02:05:43.148Z - success: builder loaded
+2017-03-24T02:05:43.154Z - success: hierarchy loaded
+2017-03-24T02:05:43.160Z - success: inspector loaded
+2017-03-24T02:05:43.162Z - success: keystore loaded
+2017-03-24T02:05:43.169Z - success: node-library loaded
+2017-03-24T02:05:43.174Z - success: preferences loaded
+2017-03-24T02:05:43.203Z - success: project-importer loaded
+2017-03-24T02:05:43.210Z - success: project-settings loaded
+2017-03-24T02:05:43.215Z - success: ui-kit loaded
+2017-03-24T02:05:43.224Z - success: ui-grid loaded
+2017-03-24T02:05:43.230Z - success: scene loaded
+2017-03-24T02:05:43.233Z - success: sprite-editor loaded
+2017-03-24T02:05:43.312Z - success: store loaded
+2017-03-24T02:05:43.320Z - success: timeline loaded
+2017-03-24T02:05:43.320Z - normal: Loading builtin packages
+2017-03-24T02:05:43.327Z - success: anysdk loaded
+2017-03-24T02:05:43.332Z - success: asset-db-debugger loaded
+2017-03-24T02:05:43.335Z - success: code-editor loaded
+2017-03-24T02:05:43.336Z - success: color-picker loaded
+2017-03-24T02:05:43.348Z - success: console loaded
+2017-03-24T02:05:43.355Z - success: package-manager loaded
+2017-03-24T02:05:43.362Z - success: tester loaded
+2017-03-24T02:05:43.367Z - success: ui-kit-preview-extra loaded
+2017-03-24T02:05:43.372Z - success: ui-kit-preview loaded
+2017-03-24T02:05:43.380Z - success: ui-tree loaded
+2017-03-24T02:05:43.473Z - normal: Initializing project /Users/apple/workspace/cocos/chessy
+2017-03-24T02:05:43.477Z - normal: Loading packages
+2017-03-24T02:05:43.484Z - normal: Watching packages
+2017-03-24T02:05:43.503Z - normal: Run Application
+2017-03-24T02:05:44.143Z - success: preview server running at http://localhost:7456
+2017-03-24T02:05:52.465Z - normal: 1.4.0
+2017-03-24T02:09:09.697Z - normal: Compiled project javascript file successfully
+2017-03-24T02:10:08.383Z - normal: Compiled project javascript file successfully
+2017-03-24T03:21:44.328Z - normal: Compiled project javascript file successfully
+2017-03-24T06:39:32.600Z - normal: Compiled project javascript file successfully
+2017-03-24T07:24:46.001Z - normal: Compiled project javascript file successfully
+2017-03-24T07:25:58.699Z - normal: Compiled project javascript file successfully
+2017-03-24T07:26:40.695Z - normal: Compiled project javascript file successfully
+2017-03-24T07:27:44.397Z - normal: Compiled project javascript file successfully
+2017-03-24T07:34:18.040Z - normal: Compiled project javascript file successfully
+2017-03-24T07:39:16.624Z - normal: Compiled project javascript file successfully
+2017-03-24T07:41:06.901Z - normal: Compiled project javascript file successfully
+2017-03-24T07:41:57.471Z - normal: Compiled project javascript file successfully
+2017-03-24T07:42:52.143Z - normal: Compiled project javascript file successfully
+2017-03-24T07:44:25.002Z - normal: Compiled project javascript file successfully
+2017-03-24T07:46:49.698Z - normal: Compiled project javascript file successfully
+2017-03-24T08:32:14.147Z - normal: Compiled project javascript file successfully
+2017-03-24T08:33:36.571Z - normal: Compiled project javascript file successfully
+2017-03-24T08:41:28.703Z - normal: Compiled project javascript file successfully
+2017-03-24T08:57:46.519Z - normal: Compiled project javascript file successfully
+2017-03-24T09:03:39.463Z - normal: Compiled project javascript file successfully
+2017-03-24T09:06:27.952Z - normal: Compiled project javascript file successfully
+2017-03-24T09:13:26.510Z - normal: Compiled project javascript file successfully
+2017-03-24T09:15:26.594Z - normal: Compiled project javascript file successfully
+2017-03-24T09:23:49.569Z - normal: Compiled project javascript file successfully
+2017-03-24T09:25:26.373Z - normal: Compiled project javascript file successfully
+2017-03-24T09:29:12.239Z - normal: Compiled project javascript file successfully
+2017-03-24T09:30:45.745Z - normal: Compiled project javascript file successfully
+2017-03-24T09:34:37.928Z - normal: Compiled project javascript file successfully
+2017-03-24T09:48:05.036Z - normal: Compiled project javascript file successfully
+2017-03-24T09:56:18.865Z - normal: Compiled project javascript file successfully
+2017-03-24T09:58:47.017Z - normal: Compiled project javascript file successfully
+2017-03-24T10:03:56.459Z - normal: Compiled project javascript file successfully
+2017-03-24T10:06:04.158Z - normal: Compiled project javascript file successfully
+2017-03-24T10:10:51.800Z - normal: Compiled project javascript file successfully
+2017-03-24T10:15:58.638Z - normal: Compiled project javascript file successfully
+2017-03-24T10:27:30.277Z - normal: Compiled project javascript file successfully
+2017-03-24T10:28:19.116Z - normal: Compiled project javascript file successfully
+2017-03-24T10:31:50.468Z - normal: Compiled project javascript file successfully
+2017-03-24T10:32:47.889Z - normal: Compiled project javascript file successfully
+2017-03-24T10:42:37.638Z - normal: Compiled project javascript file successfully
+2017-03-24T10:47:16.533Z - normal: Compiled project javascript file successfully
