@@ -373,6 +373,9 @@
     "putAudio": {
       "__uuid__": "587cf9cb-f41e-4afc-b9e7-821e5f73a410"
     },
+    "chessDieAudio": {
+      "__uuid__": "e16d86e6-e0be-4c90-bf91-0ee10c102b69"
+    },
     "blackChessPrefab": {
       "__uuid__": "bf8e1d4e-8949-4232-8fb7-6379af421b6a"
     },
@@ -381,7 +384,10 @@
     },
     "moveAble": false,
     "movingChessName": "",
+    "movingChessColor": "",
+    "movingChessIndex": 0,
     "oldPositionX": 0,
-    "oldPositionY": 0
+    "oldPositionY": 0,
+    "currentCanMoveColor": "black"
   }
 ]

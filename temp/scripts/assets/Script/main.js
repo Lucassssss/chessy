@@ -2,32 +2,35 @@
 cc._RFpush(module, '4b290oljLlIVrLHc8ejE/gZ', 'main');
 // Script/main.js
 
+var pointMgr = require('pointMgr'),
+    chessMgr = require('chessMgr'),
+    socket = window.io('http://localhost:3000');
 cc.Class({
-    "extends": cc.Component,
+    'extends': cc.Component,
 
     properties: {
         backgroundAudio: {
-            "default": null,
+            'default': null,
             url: cc.AudioClip
         },
         pickAudio: {
-            "default": null,
+            'default': null,
             url: cc.AudioClip
         },
         putAudio: {
-            "default": null,
+            'default': null,
             url: cc.AudioClip
         },
         chessDieAudio: {
-            "default": null,
+            'default': null,
             url: cc.AudioClip
         },
         blackChessPrefab: {
-            "default": null,
+            'default': null,
             type: cc.Prefab
         },
         whiteChessPrefab: {
-            "default": null,
+            'default': null,
             type: cc.Prefab
         },
         moveAble: false,
@@ -41,10 +44,42 @@ cc.Class({
 
     // use this for initialization
     onLoad: function onLoad() {
+
+        var getId = window.io('http://localhost:3000/getId');
+
+        socket.on('connected', function (msg) {
+            console.log(msg);
+            socket.on('getUserId', function (id) {
+                // this.uuid = id;
+            });
+        });
+
         this.initChessToPoint();
         this.node.on("touchstart", this.onPut, this);
         this.node.on("changePlayer", this.onChangePlayer, this);
         this.node.on("checkDiePiece", this.onCheckDiePiece, this);
+        this.node.on('chessMoved', this.onChessMoved, this);
+        this.node.on('chessMoveTo', this.onChessMoveTo, this);
+
+        socket.on('chessMoveTo', function (moveData) {
+            cc.find('Canvas').emit('chessMoveTo', moveData);
+        });
+    },
+
+    onChessMoved: function onChessMoved(moveData) {
+        console.log(moveData.detail);
+        console.log(moveData.detail.chessNumber, moveData.detail.newPosition);
+        socket.emit('chessMoveTo', moveData.detail);
+    },
+
+    onChessMoveTo: function onChessMoveTo(e) {
+        var chessNumber = e.detail.chessNumber,
+            newPosition = parseInt(e.detail.newPosition),
+            pointMgr = require('pointMgr'),
+            moveChessNode = cc.find('Canvas').getChildByName('chessPiece' + chessNumber),
+            position = pointMgr.getPosition(parseInt(newPosition));
+        cc.log(newPosition);
+        moveChessNode.runAction(cc.moveTo(0.1, position));
     },
 
     onTouchStart: function onTouchStart(e) {
@@ -112,21 +147,29 @@ cc.Class({
                 // 判断是否有棋子，坐标是否存在
                 if (moveChessNode) {
                     moveChessNode.runAction(cc.moveTo(0.1, pointX, pointY)); // 根据事件传过来的目标点做移动
+                    cc.find('Canvas').getComponent('main').movingChessName = ''; // 清空可走棋子
                     cc.audioEngine.playEffect(that.putAudio, false);
                     pointMgr.setStatus(index, false); // 设置该位置已占用
                     pointMgr.setColor(index, movingChessColor); // 设置索引值位置新颜色
                     that.setOldPosition(oldPoint, index);
                     if (targetPoint !== oldPoint) {
                         cc.log('当前移动棋子为：', movingChessIndex, '移动到： ', index);
+                        var moveData = {
+                            chessNumber: movingChessIndex,
+                            newPosition: index
+                        };
+                        cc.find('Canvas').emit('chessMoved', moveData); // 发射 socket 事件
                         pointMgr.setCurrentPiece(index, movingChessIndex); // 设置对应位置的棋子编号
                         cc.find('Canvas').emit('changePlayer', that); // 发射交换选手事件
                         // cc.find('Canvas').emit('checkDiePiece', that);    // 发射检查是否需要掐子事件
-                        that.onCheckDiePiece(index, function (pieceNumber) {
+                        that.onCheckDiePiece(index, function (pieceNumber, point) {
                             cc.log(pieceNumber);
                             if (pieceNumber !== '' && pieceNumber !== -1) {
                                 that.node.getChildByName('chessPiece' + pieceNumber).destroy(); // 销毁死亡的棋子节点
                                 cc.log('棋子', pieceNumber, '死亡');
                                 cc.audioEngine.playEffect(that.chessDieAudio, false);
+                                pointMgr.setStatus(point, true); // 设置棋子已死亡位置可重新落子
+                                chessMgr.setStatus(pieceNumber, true);
                             }
                         });
                     }
@@ -147,9 +190,9 @@ cc.Class({
                 p2Color = chessMgr.getColor(pointMgr.getCurrentPiece(2)),
                 p3Color = chessMgr.getColor(pointMgr.getCurrentPiece(3));
             if (p1Color == p7Color && p1Color != p0Color && p0Color != 'undefined') {
-                callback(pointMgr.getCurrentPiece(0));
+                callback(pointMgr.getCurrentPiece(0), 0);
             } else if (p1Color == p3Color && p1Color != p2Color && p2Color != 'undefined') {
-                callback(pointMgr.getCurrentPiece(2));
+                callback(pointMgr.getCurrentPiece(2), 2);
             }
         }
         if (index == 3) {
@@ -159,9 +202,9 @@ cc.Class({
                 p4Color = chessMgr.getColor(pointMgr.getCurrentPiece(4)),
                 p5Color = chessMgr.getColor(pointMgr.getCurrentPiece(5));
             if (p1Color == p3Color && p1Color != p2Color && p2Color != 'undefined') {
-                callback(pointMgr.getCurrentPiece(2));
+                callback(pointMgr.getCurrentPiece(2), 2);
             } else if (p3Color == p5Color && p3Color != p4Color && p4Color != 'undefined') {
-                callback(pointMgr.getCurrentPiece(4));
+                callback(pointMgr.getCurrentPiece(4), 4);
             }
         }
         if (index == 5) {
@@ -171,9 +214,9 @@ cc.Class({
                 p6Color = chessMgr.getColor(pointMgr.getCurrentPiece(6)),
                 p7Color = chessMgr.getColor(pointMgr.getCurrentPiece(7));
             if (p3Color == p5Color && p3Color != p4Color && p4Color != 'undefined') {
-                callback(pointMgr.getCurrentPiece(4));
+                callback(pointMgr.getCurrentPiece(4), 4);
             } else if (p5Color == p7Color && p5Color != p6Color && p6Color != 'undefined') {
-                callback(pointMgr.getCurrentPiece(6));
+                callback(pointMgr.getCurrentPiece(6), 6);
             }
         }
 
@@ -184,9 +227,9 @@ cc.Class({
                 p0Color = chessMgr.getColor(pointMgr.getCurrentPiece(0)),
                 p1Color = chessMgr.getColor(pointMgr.getCurrentPiece(1));
             if (p5Color == p7Color && p5Color != p6Color && p6Color != 'undefined') {
-                callback(pointMgr.getCurrentPiece(6));
+                callback(pointMgr.getCurrentPiece(6), 6);
             } else if (p7Color == p1Color && p7Color != p0Color && p0Color != 'undefined') {
-                callback(pointMgr.getCurrentPiece(0));
+                callback(pointMgr.getCurrentPiece(0), 0);
             }
         }
     },

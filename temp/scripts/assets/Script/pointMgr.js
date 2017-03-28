@@ -69,6 +69,7 @@ point[7] = {
 // console.log(point)
 
 module.exports = {
+    point: point,
     getPoint: function getPoint(index) {
         return point[index];
     },
