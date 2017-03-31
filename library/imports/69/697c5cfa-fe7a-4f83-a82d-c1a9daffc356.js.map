@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE;AACR,kBAAU,EAAE;AACR,uBAAS,IAAI;AACb,gBAAI,EAAE,EAAE,CAAC,MAAM;SAClB;AACD,cAAM,EAAG,EAAE;;KAEd;;;AAGD,UAAM,EAAE,kBAAY;;AAEhB,YAAI,CAAC,MAAM,GAAG,IAAI,CAAC,MAAM,EAAE,CAAC,QAAQ,CAAC,EAAE,CAAC,CAAC,MAAM,CAAC,CAAC,CAAC,CAAC;;AAEnD,YAAI,IAAI,GAAG,IAAI;YACX,MAAM,GAAG,MAAM,CAAC,EAAE,CAAC,uBAAuB,CAAC,CAAC;;AAEhD,cAAM,CAAC,EAAE,CAAC,WAAW,EAAE,UAAS,GAAG,EAAE;;AAEjC,gBAAI,KAAK,GAAG,IAAI,CAAC,IAAI,CAAC,WAAW,CAAC,cAAc,CAAC,CAAC;AAClD,iBAAK,CAAC,CAAC,CAAC,CAAC,YAAY,CAAC,UAAU,CAAC,CAAC,MAAM,GAAG,GAAG,CAAC;;;AAG/C,kBAAM,CAAC,IAAI,CAAC,WAAW,EAAE,IAAI,CAAC,MAAM,CAAC,CAAC;AACtC,mBAAO,CAAC,GAAG,CAAC,IAAI,CAAC,CAAC;;SAGrB,CAAC,CAAC;KAIN;;CAMJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\n    extends: cc.Component,\n\n    properties: {\n        roomPrefab: {\n            default: null,\n            type: cc.Prefab\n        },\n        userId : ''\n\n    },\n\n    // use this for initialization\n    onLoad: function () {\n        // 设置 userid\n        this.userId = Math.random().toString(36).substr(2);\n\n        var that = this,\n            socket = window.io('http://localhost:3000');\n        \n        socket.on('connected', function(msg) {\n            // socket 链接成功，修改 label 文字\n            var label = that.node.getChildren('networkLabel');\n            label[0].getComponent(\"cc.Label\").string = msg;\n            \n            // 初始化，传 userId 到后台\n            socket.emit('game_init', that.userId);\n            console.log('11');\n            // 获取房间列表\n\n        });\n\n\n\n    },\n\n    // called every frame, uncomment this function to activate update callback\n    // update: function (dt) {\n\n    // },\n});\n"
+  ]
+}

@@ -1,128 +1,78 @@
-2017-03-28T10:37:31.169Z - normal: Load ~/.CocosCreator/settings.json
-2017-03-28T10:37:31.179Z - normal: checking language setting...
-2017-03-28T10:37:31.180Z - normal: Language: zh
-2017-03-28T10:37:31.878Z - success: protocol editor-framework registered
-2017-03-28T10:37:31.879Z - success: protocol app registered
-2017-03-28T10:37:31.879Z - success: protocol theme registered
-2017-03-28T10:37:31.879Z - success: protocol profile registered
-2017-03-28T10:37:31.880Z - success: protocol packages registered
-2017-03-28T10:37:31.885Z - success: protocol unpack registerred
-2017-03-28T10:37:31.885Z - success: protocol disable-commonjs registerred
-2017-03-28T10:37:32.118Z - normal: connected!
-2017-03-28T10:37:32.123Z - normal: Check project /Users/apple/workspace/cocos/chessy
-2017-03-28T10:37:32.130Z - normal: Initializing Cocos2d
-2017-03-28T10:37:32.788Z - normal: Initializing Asset Database
-2017-03-28T10:37:32.822Z - success: protocol uuid registerred
-2017-03-28T10:37:32.823Z - success: protocol db registerred
-2017-03-28T10:37:32.823Z - success: protocol thumbnail registerred
-2017-03-28T10:37:32.823Z - normal: Loading editor/builtin packages
-2017-03-28T10:37:33.056Z - success: assets loaded
-2017-03-28T10:37:33.062Z - success: builder loaded
-2017-03-28T10:37:33.072Z - success: hierarchy loaded
-2017-03-28T10:37:33.088Z - success: inspector loaded
-2017-03-28T10:37:33.091Z - success: keystore loaded
-2017-03-28T10:37:33.100Z - success: node-library loaded
-2017-03-28T10:37:33.108Z - success: preferences loaded
-2017-03-28T10:37:33.135Z - success: project-importer loaded
-2017-03-28T10:37:33.141Z - success: project-settings loaded
-2017-03-28T10:37:33.147Z - success: ui-kit loaded
-2017-03-28T10:37:33.155Z - success: ui-grid loaded
-2017-03-28T10:37:33.163Z - success: scene loaded
-2017-03-28T10:37:33.165Z - success: sprite-editor loaded
-2017-03-28T10:37:33.246Z - success: store loaded
-2017-03-28T10:37:33.253Z - success: timeline loaded
-2017-03-28T10:37:33.254Z - normal: Loading builtin packages
-2017-03-28T10:37:33.262Z - success: anysdk loaded
-2017-03-28T10:37:33.267Z - success: asset-db-debugger loaded
-2017-03-28T10:37:33.270Z - success: code-editor loaded
-2017-03-28T10:37:33.273Z - success: color-picker loaded
-2017-03-28T10:37:33.282Z - success: console loaded
-2017-03-28T10:37:33.289Z - success: package-manager loaded
-2017-03-28T10:37:33.295Z - success: tester loaded
-2017-03-28T10:37:33.301Z - success: ui-kit-preview-extra loaded
-2017-03-28T10:37:33.307Z - success: ui-kit-preview loaded
-2017-03-28T10:37:33.316Z - success: ui-tree loaded
-2017-03-28T10:37:33.413Z - normal: Initializing project /Users/apple/workspace/cocos/chessy
-2017-03-28T10:37:33.418Z - normal: Loading packages
-2017-03-28T10:37:33.645Z - success: unpack-textureatlas loaded
-2017-03-28T10:37:33.645Z - normal: Watching packages
-2017-03-28T10:37:33.673Z - normal: Run Application
-2017-03-28T10:37:34.728Z - success: preview server running at http://localhost:7456
-2017-03-28T10:37:44.554Z - normal: 1.4.0
-2017-03-28T10:38:04.312Z - warn: Failed to send ipc message scene:query-hierarchy to panel scene, panel not found
-2017-03-28T10:38:04.315Z - warn: Failed to send ipc message scene:query-animation-node to panel scene, panel not found
-2017-03-28T10:42:07.776Z - normal: Compiled project javascript file successfully
-2017-03-28T10:43:06.469Z - normal: Compiled project javascript file successfully
-2017-03-28T10:44:47.171Z - normal: Compiled project javascript file successfully
-2017-03-28T10:46:27.752Z - normal: Compiled project javascript file successfully
-2017-03-28T10:48:48.887Z - normal: Compiled project javascript file successfully
-2017-03-28T10:48:53.247Z - warn: Script attached to "Canvas" in scene "helloworld.fire" is missing or invalid. Detailed information:
-Node path: "Canvas"
-Asset url: "db://assets/Scene/helloworld.fire"
-Script UUID: "280c3aec-6492-4a9d-9f51-a9b00b570b4a"
-Class ID: "280c3rsZJJKnZ9RqbALVwtK"
-
-2017-03-28T10:48:56.852Z - warn: Script attached to "Canvas" in scene "helloworld.fire" is missing or invalid. Detailed information:
-Node path: "Canvas"
-Asset url: "db://assets/Scene/helloworld.fire"
-Script UUID: "280c3aec-6492-4a9d-9f51-a9b00b570b4a"
-Class ID: "280c3rsZJJKnZ9RqbALVwtK"
-
-2017-03-28T10:56:05.951Z - normal: Compiled project javascript file successfully
-2017-03-28T11:30:13.557Z - normal: Compiled project javascript file successfully
-2017-03-28T11:30:14.085Z - warn: 'main.uuid' hides inherited property 'cc.Component.uuid'. To make the current property override that implementation, add the `override: true` attribute please.
-2017-03-28T11:30:15.079Z - error: Can not declare main.uuid, it is already defined in the prototype of main
-    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/CCDebugger.js:332:22)
-    at defineProp (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/platform/CCClass.js:132:20)
-    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/platform/CCClass.js:691:17)
-    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/platform/CCClass.js:816:9)
-    at Object.require.main.chessMgr (assets/Script/main.js:4)
-    at s (../../../../../../../Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at e (../../../../../../../Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at file:///Users/apple/workspace/cocos/chessy/library/bundle.project.js?009:1:451
-2017-03-28T11:30:56.526Z - normal: Compiled project javascript file successfully
-2017-03-28T11:30:57.629Z - warn: 'main.uuid' hides inherited property 'cc.Component.uuid'. To make the current property override that implementation, add the `override: true` attribute please.
-2017-03-28T11:30:57.693Z - error: Can not declare main.uuid, it is already defined in the prototype of main
-    at Object.cc.errorID (/Applications/CocosCreator.app/Contents/Resources/engine/CCDebugger.js:332:22)
-    at defineProp (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/platform/CCClass.js:132:20)
-    at declareProperties (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/platform/CCClass.js:691:17)
-    at Object.CCClass [as Class] (/Applications/CocosCreator.app/Contents/Resources/engine/cocos2d/core/platform/CCClass.js:816:9)
-    at Object.require.main.chessMgr (assets/Script/main.js:4)
-    at s (../../../../../../../Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at e (../../../../../../../Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/browser-pack/_prelude.js:1)
-    at file:///Users/apple/workspace/cocos/chessy/library/bundle.project.js?010:1:451
-2017-03-28T11:31:24.276Z - normal: Compiled project javascript file successfully
-2017-03-28T11:33:02.452Z - normal: Compiled project javascript file successfully
-2017-03-28T11:34:25.404Z - normal: Compiled project javascript file successfully
-2017-03-28T11:35:02.127Z - normal: Compiled project javascript file successfully
-2017-03-28T11:36:11.335Z - normal: Compiled project javascript file successfully
-2017-03-28T11:36:36.720Z - normal: Compiled project javascript file successfully
-2017-03-28T11:47:07.365Z - normal: Compiled project javascript file successfully
-2017-03-28T11:47:36.657Z - normal: Compiled project javascript file successfully
-2017-03-28T11:48:56.190Z - normal: Compiled project javascript file successfully
-2017-03-28T11:52:08.414Z - normal: Compiled project javascript file successfully
-2017-03-28T11:56:01.897Z - normal: Compiled project javascript file successfully
-2017-03-28T12:01:58.585Z - normal: Compiled project javascript file successfully
-2017-03-28T12:02:45.623Z - normal: Compiled project javascript file successfully
-2017-03-28T12:03:35.498Z - normal: Compiled project javascript file successfully
-2017-03-28T12:05:12.953Z - normal: Compiled project javascript file successfully
-2017-03-28T12:09:24.611Z - normal: Compiled project javascript file successfully
-2017-03-28T12:11:03.576Z - normal: Compiled project javascript file successfully
-2017-03-28T12:12:44.916Z - normal: Compiled project javascript file successfully
-2017-03-28T12:14:17.995Z - normal: Compiled project javascript file successfully
-2017-03-28T12:16:09.112Z - normal: Compiled project javascript file successfully
-2017-03-28T12:20:41.433Z - normal: Compiled project javascript file successfully
-2017-03-28T12:21:51.732Z - normal: Compiled project javascript file successfully
-2017-03-28T12:23:11.573Z - normal: Compiled project javascript file successfully
-2017-03-28T12:23:47.294Z - normal: Compiled project javascript file successfully
-2017-03-28T12:25:15.496Z - normal: Compiled project javascript file successfully
-2017-03-28T12:25:30.924Z - normal: Compiled project javascript file successfully
-2017-03-28T12:25:58.602Z - normal: Compiled project javascript file successfully
-2017-03-28T12:27:11.175Z - normal: Compiled project javascript file successfully
-2017-03-28T12:28:15.058Z - normal: Compiled project javascript file successfully
-2017-03-28T12:28:49.931Z - normal: Compiled project javascript file successfully
-2017-03-28T12:29:23.765Z - normal: Compiled project javascript file successfully
-2017-03-28T12:30:11.797Z - normal: Compiled project javascript file successfully
-2017-03-28T12:30:55.810Z - normal: Compiled project javascript file successfully
-2017-03-28T12:31:20.750Z - normal: Compiled project javascript file successfully
-2017-03-28T12:31:46.085Z - normal: Compiled project javascript file successfully
+2017-03-31T07:05:02.268Z - normal: Load ~/.CocosCreator/settings.json
+2017-03-31T07:05:02.276Z - normal: checking language setting...
+2017-03-31T07:05:02.276Z - normal: Language: zh
+2017-03-31T07:05:03.104Z - success: protocol editor-framework registered
+2017-03-31T07:05:03.104Z - success: protocol app registered
+2017-03-31T07:05:03.105Z - success: protocol theme registered
+2017-03-31T07:05:03.105Z - success: protocol profile registered
+2017-03-31T07:05:03.105Z - success: protocol packages registered
+2017-03-31T07:05:03.113Z - success: protocol unpack registerred
+2017-03-31T07:05:03.113Z - success: protocol disable-commonjs registerred
+2017-03-31T07:05:03.357Z - normal: connected!
+2017-03-31T07:05:03.361Z - normal: Check project /Users/apple/workspace/cocos/chessy
+2017-03-31T07:05:03.366Z - normal: Initializing Cocos2d
+2017-03-31T07:05:03.723Z - normal: Initializing Asset Database
+2017-03-31T07:05:03.753Z - success: protocol uuid registerred
+2017-03-31T07:05:03.754Z - success: protocol db registerred
+2017-03-31T07:05:03.754Z - success: protocol thumbnail registerred
+2017-03-31T07:05:03.754Z - normal: Loading editor/builtin packages
+2017-03-31T07:05:03.971Z - success: assets loaded
+2017-03-31T07:05:03.977Z - success: builder loaded
+2017-03-31T07:05:03.986Z - success: hierarchy loaded
+2017-03-31T07:05:03.999Z - success: inspector loaded
+2017-03-31T07:05:04.001Z - success: keystore loaded
+2017-03-31T07:05:04.008Z - success: node-library loaded
+2017-03-31T07:05:04.015Z - success: preferences loaded
+2017-03-31T07:05:04.039Z - success: project-importer loaded
+2017-03-31T07:05:04.044Z - success: project-settings loaded
+2017-03-31T07:05:04.050Z - success: ui-kit loaded
+2017-03-31T07:05:04.060Z - success: ui-grid loaded
+2017-03-31T07:05:04.070Z - success: scene loaded
+2017-03-31T07:05:04.072Z - success: sprite-editor loaded
+2017-03-31T07:05:04.159Z - success: store loaded
+2017-03-31T07:05:04.166Z - success: timeline loaded
+2017-03-31T07:05:04.167Z - normal: Loading builtin packages
+2017-03-31T07:05:04.174Z - success: anysdk loaded
+2017-03-31T07:05:04.178Z - success: asset-db-debugger loaded
+2017-03-31T07:05:04.181Z - success: code-editor loaded
+2017-03-31T07:05:04.181Z - success: color-picker loaded
+2017-03-31T07:05:04.188Z - success: console loaded
+2017-03-31T07:05:04.195Z - success: package-manager loaded
+2017-03-31T07:05:04.201Z - success: tester loaded
+2017-03-31T07:05:04.206Z - success: ui-kit-preview-extra loaded
+2017-03-31T07:05:04.211Z - success: ui-kit-preview loaded
+2017-03-31T07:05:04.219Z - success: ui-tree loaded
+2017-03-31T07:05:04.297Z - normal: Initializing project /Users/apple/workspace/cocos/chessy
+2017-03-31T07:05:04.301Z - normal: Loading packages
+2017-03-31T07:05:04.529Z - success: unpack-textureatlas loaded
+2017-03-31T07:05:04.530Z - normal: Watching packages
+2017-03-31T07:05:04.555Z - normal: Run Application
+2017-03-31T07:05:05.287Z - success: preview server running at http://localhost:7456
+2017-03-31T07:05:14.404Z - normal: 1.4.0
+2017-03-31T07:09:06.471Z - normal: Compiled project javascript file successfully
+2017-03-31T07:11:03.060Z - normal: Compiled project javascript file successfully
+2017-03-31T07:15:16.644Z - normal: Compiled project javascript file successfully
+2017-03-31T07:15:34.559Z - normal: Compiled project javascript file successfully
+2017-03-31T07:17:48.923Z - normal: Compiled project javascript file successfully
+2017-03-31T07:19:19.869Z - normal: Compiled project javascript file successfully
+2017-03-31T07:20:19.108Z - normal: Compiled project javascript file successfully
+2017-03-31T07:20:43.314Z - normal: Compiled project javascript file successfully
+2017-03-31T07:22:33.327Z - normal: Compiled project javascript file successfully
+2017-03-31T07:23:10.994Z - normal: Compiled project javascript file successfully
+2017-03-31T07:24:15.456Z - normal: Compiled project javascript file successfully
+2017-03-31T07:25:39.061Z - normal: Compiled project javascript file successfully
+2017-03-31T07:26:44.340Z - normal: Compiled project javascript file successfully
+2017-03-31T07:28:14.457Z - normal: Compiled project javascript file successfully
+2017-03-31T07:41:22.055Z - normal: Compiled project javascript file successfully
+2017-03-31T07:42:05.590Z - normal: Compiled project javascript file successfully
+2017-03-31T07:42:29.263Z - normal: Compiled project javascript file successfully
+2017-03-31T07:43:00.550Z - normal: Compiled project javascript file successfully
+2017-03-31T07:43:38.520Z - normal: Compiled project javascript file successfully
+2017-03-31T07:44:07.330Z - normal: Compiled project javascript file successfully
+2017-03-31T08:06:33.535Z - normal: Compiled project javascript file successfully
+2017-03-31T08:12:11.560Z - normal: Compiled project javascript file successfully
+2017-03-31T08:15:09.636Z - normal: Compiled project javascript file successfully
+2017-03-31T08:53:30.782Z - normal: Compiled project javascript file successfully
+2017-03-31T08:54:01.787Z - normal: Compiled project javascript file successfully
+2017-03-31T08:55:08.634Z - normal: Compiled project javascript file successfully
+2017-03-31T09:22:33.329Z - normal: Compiled project javascript file successfully

@@ -100,19 +100,14 @@
     "relativePath": "prefab/webview.prefab"
   },
   "29f52784-2fca-467b-92e7-8fd9ef8c57b7": {
-    "asset": 1490089590000,
-    "meta": 1490090845000,
+    "asset": 1490943100000,
+    "meta": 1490943904000,
     "relativePath": "Scene"
   },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1490089677000,
-    "meta": 1490090846000,
+    "asset": 1490943245000,
+    "meta": 1490943904000,
     "relativePath": "Script"
-  },
-  "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1489483083000,
-    "meta": 1489483089000,
-    "relativePath": "Scene/helloworld.fire"
   },
   "7b81d4e8-ec84-4716-968d-500ac1d78a54": {
     "asset": 1490352086000,
@@ -165,8 +160,8 @@
     "relativePath": "Texture/background.png"
   },
   "f336141a-2774-40bc-ad8f-2e54cd97800e": {
-    "asset": 1490704414000,
-    "meta": 1490704414000,
+    "asset": 1490860416000,
+    "meta": 1490860416000,
     "relativePath": "Scene/首页.fire"
   },
   "cba08583-83d0-4b9e-a03a-0aa6c11a1973": {
@@ -324,11 +319,6 @@
     "meta": 1490352086000,
     "relativePath": "Texture/chessDie.mp3"
   },
-  "36af8461-0965-422d-9e9c-368ee8682ae1": {
-    "asset": 1490697327000,
-    "meta": 1490697454000,
-    "relativePath": "Socket"
-  },
   "5ec9df9f-a342-4a96-a793-4222bf8c3fcf": {
     "asset": 1490696231000,
     "meta": 1490697327000,
@@ -339,9 +329,24 @@
     "meta": 1490703158000,
     "relativePath": "Script/pointMgr.js"
   },
+  "2500456a-4543-46d1-8222-e5e66851fda0": {
+    "asset": 1490945363000,
+    "meta": 1490945363000,
+    "relativePath": "Scene/房间.fire"
+  },
+  "323d3164-c6e7-4899-bd3a-ebaed05b9f82": {
+    "asset": 1490943229000,
+    "meta": 1490943245000,
+    "relativePath": "Script/roomPrefab.prefab"
+  },
   "4b290a25-8cb9-4856-b2c7-73c7a313f819": {
-    "asset": 1490704297000,
-    "meta": 1490704299000,
+    "asset": 1490946144000,
+    "meta": 1490946146000,
     "relativePath": "Script/main.js"
+  },
+  "697c5cfa-fe7a-4f83-a82d-c1a9daffc356": {
+    "asset": 1490952145000,
+    "meta": 1490952146000,
+    "relativePath": "Script/room.js"
   }
 }

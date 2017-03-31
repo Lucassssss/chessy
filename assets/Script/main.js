@@ -35,18 +35,24 @@ cc.Class({
         movingChessIndex: 0,
         oldPositionX: 0,
         oldPositionY: 0,
-        currentCanMoveColor: 'black'
+        currentCanMoveColor: 'black',
+        flagWhite: 0,
+        flagBlack: 1,
+        myUserId:''
     },
 
     // use this for initialization
     onLoad: function () {
         
-        var getId = window.io('http://localhost:3000/getId');
+        //var getId = window.io('http://localhost:3000/getId');
 
+        var socket = window.io('http://localhost:3000');
         socket.on('connected', function(msg) {
             console.log(msg);
             socket.on('getUserId', function(id) {
-                // this.uuid = id;
+                this.myUserId = id;
+                socket.emit('saveUser', id);
+                console.log('获取到的 id: ',id);
             });
         });
 
@@ -55,27 +61,52 @@ cc.Class({
         this.node.on("changePlayer", this.onChangePlayer, this);
         this.node.on("checkDiePiece", this.onCheckDiePiece, this);
         this.node.on('chessMoved', this.onChessMoved, this);
-        this.node.on('chessMoveTo', this.onChessMoveTo, this);
+        this.node.on('chessMoveTo', this.onChessMoveTo, this); // 监听走棋
+        // this.node.on('setOldPosition', this.onSetOldPosition, this);
+        
+        // 清空旧位置
+        socket.on('clearPosition', function(oldPoint) {
+            pointMgr.isInpoint(oldPoint, function(index) {
+                console.log('清空旧位置：', index);
+                pointMgr.setStatus(index, true);        // 设置已移除棋子位置的状态
+                pointMgr.setCurrentPiece(index, -1);
+
+                console.log(pointMgr.getStatus(index));
+            });
+        });
         
         socket.on('chessMoveTo', function(moveData) {
             cc.find('Canvas').emit('chessMoveTo', moveData);
         });
     },
-
+    // 向服务器发射走棋
     onChessMoved: function(moveData) {
         console.log(moveData.detail);
         console.log(moveData.detail.chessNumber, moveData.detail.newPosition);
-        socket.emit('chessMoveTo', moveData.detail);
+        //if(this.flagBlack == 1) {
+            socket.emit('chessMoveTo', moveData.detail);
+        //    this.flagWhite = 1;
+        //    this.flagBlack = 0;
+        //}
+        cc.find('Canvas').emit('changePlayer', this);
     },
-
+    // 收到服务器走棋事件
     onChessMoveTo: function(e) {
-        let chessNumber = e.detail.chessNumber,
-            newPosition = parseInt(e.detail.newPosition),
-            pointMgr = require('pointMgr'),
-            moveChessNode = cc.find('Canvas').getChildByName('chessPiece'+chessNumber),
-            position = pointMgr.getPosition(parseInt(newPosition));
-        cc.log(newPosition);
-        moveChessNode.runAction(cc.moveTo(0.1, position));
+        // if(this.flagBlack == 1) {
+        //     this.flagWhite = 1;
+        //     this.flagBlack = 0;
+        
+            let chessNumber = e.detail.chessNumber,
+                newPosition = parseInt(e.detail.newPosition),
+                pointMgr = require('pointMgr'),
+                moveChessNode = cc.find('Canvas').getChildByName('chessPiece'+chessNumber),
+                // position = pointMgr.getPosition(parseInt(newPosition));
+                pointX = pointMgr.getPoint(newPosition).x, 
+                pointY = pointMgr.getPoint(newPosition).y;
+            // cc.log(position);
+            moveChessNode.runAction(cc.moveTo(0.1, pointX, pointY));
+            cc.find('Canvas').emit('changePlayer', this);
+        //}
     },
 
     onTouchStart: function(e) {
@@ -135,17 +166,19 @@ cc.Class({
             // cc.log(pointX, pointY)
             if(pointX && pointY && pointMgr.getStatus(index)) { // 判断是否有棋子，坐标是否存在
                 if(moveChessNode) {
-                    moveChessNode.runAction(cc.moveTo(0.1, pointX, pointY));   // 根据事件传过来的目标点做移动
+                    // moveChessNode.runAction(cc.moveTo(0.1, pointX, pointY));   // 根据事件传过来的目标点做移动
                     cc.find('Canvas').getComponent('main').movingChessName = '';  // 清空可走棋子
                     cc.audioEngine.playEffect(that.putAudio, false);
                     pointMgr.setStatus(index, false);     // 设置该位置已占用
                     pointMgr.setColor(index, movingChessColor);     // 设置索引值位置新颜色
-                    that.setOldPosition(oldPoint, index);
+                    // that.setOldPosition(oldPoint, index);
+                    socket.emit('setOldPosition', oldPoint);
                     if(targetPoint !== oldPoint) {
                         cc.log('当前移动棋子为：', movingChessIndex, '移动到： ', index);
                         let moveData = {
                             chessNumber:movingChessIndex, 
-                            newPosition:index
+                            newPosition:index,
+                            
                         };
                         cc.find('Canvas').emit('chessMoved', moveData); // 发射 socket 事件
                         pointMgr.setCurrentPiece(index, movingChessIndex);   // 设置对应位置的棋子编号
@@ -223,12 +256,17 @@ cc.Class({
         }
     },
 
-    setOldPosition: function(oldPoint) {
+    onSetOldPosition: function(oldPoint) {
         let pointMgr = require('pointMgr');
         pointMgr.isInpoint(oldPoint, function(index) {
             pointMgr.setStatus(index, true);        // 设置已移除棋子位置的状态
             pointMgr.setCurrentPiece(index, -1);
         });
+    },
+
+    setOldPosition: function(oldPoint) {
+        // 棋子旧位置清空
+        socket.emit('setOldPosition', oldPoint);
     },
 
     // 初始化放置棋子到默认位置

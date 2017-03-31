@@ -387,6 +387,9 @@
     "movingChessIndex": 0,
     "oldPositionX": 0,
     "oldPositionY": 0,
-    "currentCanMoveColor": "black"
+    "currentCanMoveColor": "black",
+    "flagWhite": 0,
+    "flagBlack": 1,
+    "myUserId": ""
   }
 ]
